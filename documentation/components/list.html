@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from 127.0.0.1:8000/documentation/components/list by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Jul 2023 10:45:42 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>List | meshCSS</title>
+    <meta name="description" content="Effectively group list items together with our list utility class.">
+    <link rel="canonical" href="https://www.meshcss.com/" />
+    <meta name="csrf" content="b51fKECi9twQ3j8eTInkU6xBzvJM4klQSX1wSLqw" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Open Graph -->
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="List">
+    <meta property="og:description" content="Effectively group list items together with our list utility class.">
+    <meta property="og:url" content="https://www.meshcss.com/">
+    <meta property="og:site_name" content="mesh>">
+    <meta property="og:image" content="https://www.meshcss.com/">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:description" content="Effectively group list items together with our list utility class.">
+    <meta name="twitter:title" content="List">
+    <meta name="twitter:image" content="https://www.meshcss.com/">
+    <!-- CSS -->
+    
+    <!-- //! Consider using one style sheet here for font awesome -->
+    
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;display=swap" onload="this.rel='stylesheet'" as="style">
+    <link rel="preload" href="../../css/vendor/fontawesome/css/all.min.css" onload="this.rel='stylesheet'" as="style">
+
+    <link rel="prefetch" href="../../css/mesh.css" onload="this.rel='stylesheet'" as="style">
+    
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;display=swap"></noscript>
+    <link rel="stylesheet" type="text/css" href="../../css/app.css"> 
+    <noscript><link rel="stylesheet" href="../../css/vendor/fontawesome/css/all.min.css"></noscript>
+    <noscript><link rel="stylesheet" href="../../css/mesh.css"></noscript>
+    <noscript><link rel="stylesheet" href="../../css/app.css"></noscript>
+    <!-- =====================
+    Page CSS (Place in <style></style> tags)
+    ===================== -->
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../assets/favicon/site.html">
+    <link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ff2451">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140877948-1"></script>
+    <script>
+    //! UNCOMMENT FOR GTAG
+    // window.dataLayer = window.dataLayer || [];
+    // function gtag(){dataLayer.push(arguments);}
+    // gtag('js', new Date());
+    // gtag('config', 'UA-140877948-1');
+    </script>
+</head>
+    <body>
+        <!--[if lte IE 9]>
+            <div class="outdated-browser">
+                <h2>You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</h2>
+            </div>
+        <![endif]-->
+        <!-- =====================
+    Header
+    ===================== -->
+
+<header class="primary d-flex align-items-center ">
+    <div class="container-fullwidth px-tab-4">
+        <div class="row">
+            <div class="col-6">
+                <a class="d-flex align-items-center logo-cont" href="../../index.html">
+                    <div class="logo-cont d-flex align-items-center">
+                        <img class="logo" src="../../assets/svg/meshlogo.svg" alt="mesh Logo">
+                    </div>
+                    <div class="text-cont d-none d-tab-block">
+                        <h3>meshCSS</h3>
+                    </div>
+                </a>
+            </div>
+            <!-- //! d none here for mobile -->
+            <div class="col-6 align-items-center justify-content-end d-none d-tab-flex">        
+                <nav class="primary">
+                    <ul class="d-flex align-items-center my-0 t-uppercase">
+                        <a class="hover" href="../getting-started/introduction.html"><li class="mx-3">Documentation</li></a>
+                        <a class="hover" href="https://github.com/ainsleyclark/mesh" target="_blank"><li class="mx-3">Github</li></a>
+                        <a class="ml-3" href="../thanks.html">
+                            <button class="btn btn-rounded btn-outline btn-primary btn-icon download">Download
+                            <svg class="ml-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 471.2 471.2" style="enable-background:new 0 0 471.2 471.2;" xml:space="preserve">
+                                <g>
+                                    <path d="M457.7,230.15c-7.5,0-13.5,6-13.5,13.5v122.8c0,33.4-27.2,60.5-60.5,60.5H87.5c-33.4,0-60.5-27.2-60.5-60.5v-124.8    c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5v124.8c0,48.3,39.3,87.5,87.5,87.5h296.2c48.3,0,87.5-39.3,87.5-87.5v-122.8    C471.2,236.25,465.2,230.15,457.7,230.15z" data-original="#000000" class="active-path" data-old_color="#ffffff" fill="#ffffff"/>
+                                    <path d="M226.1,346.75c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4l85.8-85.8c5.3-5.3,5.3-13.8,0-19.1c-5.3-5.3-13.8-5.3-19.1,0l-62.7,62.8    V30.75c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5v273.9l-62.8-62.8c-5.3-5.3-13.8-5.3-19.1,0c-5.3,5.3-5.3,13.8,0,19.1    L226.1,346.75z" data-original="#000000" class="active-path" data-old_color="#ffffff" fill="#ffffff"/>
+                                </g>
+                            </svg>
+                            </button>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div> 
+</header>        <main class="page-list">
+            <div class="header-spacer"></div>
+<!-- =====================
+    Side Navigation
+    ===================== -->
+<aside class="sidenav">
+    <h3>Documentation</h3>
+    <ul class="main-list color-black">
+        <!-- Getting Started -->
+        <li class="my-4">
+            <div class="nav-header b-b-light pb-2">Getting Started</div>
+            <ul class="sub-list mt-1">
+                <a class=""
+                    href="../getting-started/introduction.html">
+                    <li>Introduction</li>
+                </a>
+                <a class=""
+                    href="../getting-started/installation.html">
+                    <li>Installation</li>
+                </a>
+                <a class="" href="../../builder.html">
+                    <li>meshBuilder</li>
+                </a>
+                <a class=""
+                    href="../getting-started/javascript.html">
+                    <li>Javascript</li>
+                </a>
+                <a class=""
+                    href="../getting-started/notation.html">
+                    <li>Notation</li>
+                </a>
+            </ul>
+        </li>
+        <!-- Grid -->
+        <li class="my-4">
+            <div class="nav-header b-b-light pb-2">Grid</div>
+            <ul class="sub-list mt-1">
+                <a class="" href="../grid/grid.html">
+                    <li>Grid</li>
+                </a>
+                <a class="" href="../grid/flex.html">
+                    <li>Flex</li>
+                </a>
+                <a class="" href="../grid/order.html">
+                    <li>Order</li>
+                </a>
+                <a class="" href="../grid/display.html">
+                    <li>Display</li>
+                </a>
+            </ul>
+        </li>
+        <!-- Utility -->
+        <li class="my-4">
+            <div class="nav-header b-b-light pb-2">Utility</div>
+            <ul class="sub-list mt-1">
+                <a class="" href="../utility/borders.html">
+                    <li>Borders</li>
+                </a>
+                <a class="" href="../utility/colors.html">
+                    <li>Colors</li>
+                </a>
+                <a class="" href="../utility/float.html">
+                    <li>Float</li>
+                </a>
+                <a class="" href="../utility/media.html">
+                    <li>Media</li>
+                </a>
+                <a class="" href="../utility/position.html">
+                    <li>Position</li>
+                </a>
+                <a class="" href="../utility/sizing.html">
+                    <li>Sizing</li>
+                </a>
+                <a class="" href="../utility/spacers.html">
+                    <li>Spacers</li>
+                </a>
+                <a class="" href="../utility/spacing.html">
+                    <li>Spacing</li>
+                </a>
+                <a class="" href="../utility/text.html">
+                    <li>Text</li>
+                </a>
+                <a class="" href="../utility/visibility.html">
+                    <li>Visibility</li>
+                </a>
+            </ul>
+        </li>
+        <!-- Components -->
+        <li class="my-4">
+            <div class="nav-header b-b-light pb-2">Components</div>
+            <ul class="sub-list mt-1">
+                <a class="" href="alert.html">
+                    <li>Alert</li>
+                </a>
+                <a class="" href="badges.html">
+                    <li>Badges</li>
+                </a>
+                <a class=""
+                    href="breadcrumb.html">
+                    <li>Breadcrumbs</li>
+                </a>
+                <a class="" href="button.html">
+                    <li>Button</li>
+                </a>
+                <a class="" href="card.html">
+                    <li>Card</li>
+                </a>
+                <a class="" href="collapse.html">
+                    <li>Collapse</li>
+                </a>
+                <a class="" href="epic.html">
+                    <li>Epic</li>
+                </a>
+                <a class="" href="form.html">
+                    <li>Form</li>
+                </a>
+                <a class="active" href="list.html">
+                    <li>List</li>
+                </a>
+                <a class="" href="modal.html">
+                    <li>Modal</li>
+                </a>
+                <a class="" href="nav.html">
+                    <li>Nav</li>
+                </a>
+                <a class="" href="navbar.html">
+                    <li>Navbar</li>
+                </a>
+                <a class=""
+                    href="pagination.html">
+                    <li>Pagination</li>
+                </a>
+                <a class="" href="table.html">
+                    <li>Table</li>
+                </a>
+                <a class="" href="tabs.html">
+                    <li>Tabs</li>
+                </a>
+                <a class="" href="toast.html">
+                    <li>Toasts</li>
+                </a>
+                <a class="" href="tooltip.html">
+                    <li>Tooltip</li>
+                </a>
+            </ul>
+        </li>
+    </ul>
+</aside>
+<section class="content button-page">
+    <div class="container-fullwidth">
+        <div class="row justify-content-center mt-4 mt-desk-5">
+            <div class="col-12 col-tab-9 col-desk-8 mr-desk-2 px-desk-4">
+                <h1 class="mb-2 mt-0">List</h1>
+                <div class="lead">Effectively group list items together with our list utility class.</div>
+                <!-- =====================
+    Docs Section - Main HTML
+    ===================== -->
+
+<!-- Usage -->
+<article class="section-scroll" id="usage">
+    <h2 class="b-b-light hash">Usage</h2>
+    <p class="secondary-lead">
+        A list is a way of portraying similar data in an orderly fashion. List items should be wrapped in a <code
+            class="inline">&lt;ul&gt;</code> element with a <code class="inline">list</code> class attached to it.
+        <br>Each <code class="inline">&lt;li&gt;</code> or <code class="inline">&lt;a&gt;</code> tag within the list
+        should have a <code class="inline">list-item</code> class attached to it, see below:
+    </p>
+    <ul class="list">
+        <li class="list-item">List item</li>
+        <li class="list-item">List item</li>
+        <li class="list-item">List item</li>
+        <li class="list-item">List item</li>
+        <li class="list-item">List item</li>
+    </ul>
+    <pre
+        class="highlight"><code class="html">&lt;ul class=&quot;list&quot;&gt;
+    &lt;li class=&quot;list-item&quot;&gt;List item&lt;/li&gt;
+    &lt;li class=&quot;list-item&quot;&gt;List item&lt;/li&gt;
+    &lt;li class=&quot;list-item&quot;&gt;List item&lt;/li&gt;
+    &lt;li class=&quot;list-item&quot;&gt;List item&lt;/li&gt;
+    &lt;li class=&quot;list-item&quot;&gt;List item&lt;/li&gt;
+&lt;/ul&gt;</code><img class="copy-to-clipboard"src="../../assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="../../assets/icons/checked.svg" alt="Success icon"></pre>
+</article>
+
+<!-- Active -->
+<article class="section-scroll" id="active">
+    <h2 class="b-b-light hash">Active</h2>
+    <p class="secondary-lead">
+        In order to display a colored background on one of the list items, simply add the <code
+            class="inline">active</code> class
+    </p>
+    <ul class="list">
+        <li class="list-item active">List item</li>
+        <li class="list-item">List item</li>
+        <li class="list-item">List item</li>
+        <li class="list-item">List item</li>
+        <li class="list-item">List item</li>
+    </ul>
+    <pre
+        class="highlight"><code class="html">&lt;ul class=&quot;list&quot;&gt;
+    &lt;li class=&quot;list-item active&quot;&gt;List item&lt;/li&gt;
+    &lt;li class=&quot;list-item&quot;&gt;List item&lt;/li&gt;
+    &lt;li class=&quot;list-item&quot;&gt;List item&lt;/li&gt;
+    &lt;li class=&quot;list-item&quot;&gt;List item&lt;/li&gt;
+    &lt;li class=&quot;list-item&quot;&gt;List item&lt;/li&gt;
+&lt;/ul&gt;</code><img class="copy-to-clipboard"src="../../assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="../../assets/icons/checked.svg" alt="Success icon"></pre>
+</article>
+
+<!-- Usage -->
+<article class="section-scroll" id="disabled">
+    <h2 class="b-b-light hash">Disabled</h2>
+    <p class="secondary-lead">
+        To make a list item disabled, add the <code class="inline">disabled</code> class, which will slightly mute the
+        color of the text.
+    </p>
+    <ul class="list">
+        <li class="list-item disabled">List item</li>
+        <li class="list-item">List item</li>
+        <li class="list-item">List item</li>
+        <li class="list-item">List item</li>
+        <li class="list-item">List item</li>
+    </ul>
+    <pre
+        class="highlight"><code class="html">&lt;ul class=&quot;list&quot;&gt;
+    &lt;li class=&quot;list-item disabled&quot;&gt;List item&lt;/li&gt;
+    &lt;li class=&quot;list-item&quot;&gt;List item&lt;/li&gt;
+    &lt;li class=&quot;list-item&quot;&gt;List item&lt;/li&gt;
+    &lt;li class=&quot;list-item&quot;&gt;List item&lt;/li&gt;
+    &lt;li class=&quot;list-item&quot;&gt;List item&lt;/li&gt;
+&lt;/ul&gt;</code><img class="copy-to-clipboard"src="../../assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="../../assets/icons/checked.svg" alt="Success icon"></pre>
+</article>
+
+<!-- Link -->
+<article class="section-scroll" id="link">
+    <h2 class="b-b-light hash">Link</h2>
+    <p class="secondary-lead">
+        Instead of using <code class="inline">&lt;li&gt;</code> tags you can also use <code class="inline">a</code>
+        links. Which will add a <code class="inline">display: block;</code> property to stack them vertically.
+    </p>
+    <ul class="list">
+        <a href="#!" class="list-item">List item</a>
+        <a href="#!" class="list-item active">List item</a>
+        <a href="#!" class="list-item">List item</a>
+        <a href="#!" class="list-item">List item</a>
+        <a href="#!" class="list-item">List item</a>
+    </ul>
+    <pre
+        class="highlight"><code class="html">&lt;ul class=&quot;list&quot;&gt;
+    &lt;a href=&quot;#!&quot; class=&quot;list-item&quot;&gt;List item&lt;/a&gt;
+    &lt;a href=&quot;#!&quot; class=&quot;list-item active&quot;&gt;List item&lt;/a&gt;
+    &lt;a href=&quot;#!&quot; class=&quot;list-item&quot;&gt;List item&lt;/a&gt;
+    &lt;a href=&quot;#!&quot; class=&quot;list-item&quot;&gt;List item&lt;/a&gt;
+    &lt;a href=&quot;#!&quot; class=&quot;list-item&quot;&gt;List item&lt;/a&gt;
+&lt;/ul&gt;</code><img class="copy-to-clipboard"src="../../assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="../../assets/icons/checked.svg" alt="Success icon"></pre>
+</article>
+
+<!-- Icon -->
+<article class="section-scroll" id="icon">
+    <h2 class="b-b-light hash">Icon</h2>
+    <p class="secondary-lead">
+        Icons can also be used in conjunction with a <code class="inline">list-item</code> element. Simply add the <code
+            class="inline">list-icon</code> class, which will add the <code class="inline">display: flex;</code>
+        property.
+    </p>
+    <ul class="list">
+        <a href="#!" class="list-item list-icon">
+            List item
+            <i class="fas fa-caret-right fa-lg"></i>
+        </a>
+        <a href="#!" class="list-item list-icon active">
+            List item
+            <i class="fas fa-caret-right fa-lg"></i>
+        </a>
+        <a href="#!" class="list-item list-icon">
+            List item
+            <i class="fas fa-caret-right fa-lg"></i>
+        </a>
+        <a href="#!" class="list-item list-icon">
+            List item
+            <i class="fas fa-caret-right fa-lg"></i>
+        </a>
+        <a href="#!" class="list-item list-icon">
+            List item
+            <i class="fas fa-caret-right fa-lg"></i>
+        </a>
+    </ul>
+    <pre
+        class="highlight"><code class="html">&lt;ul class=&quot;list&quot;&gt;
+    &lt;a href=&quot;#!&quot; class=&quot;list-item list-icon&quot;&gt;
+        List item
+        &lt;i class=&quot;fas fa-caret-right fa-lg&quot;&gt;&lt;/i&gt;
+    &lt;/a&gt;                        
+    &lt;a href=&quot;#!&quot; class=&quot;list-item list-icon active&quot;&gt;
+        List item
+        &lt;i class=&quot;fas fa-caret-right fa-lg&quot;&gt;&lt;/i&gt;
+    &lt;/a&gt;
+    &lt;a href=&quot;#!&quot; class=&quot;list-item list-icon&quot;&gt;
+        List item
+        &lt;i class=&quot;fas fa-caret-right fa-lg&quot;&gt;&lt;/i&gt;
+    &lt;/a&gt;                        
+    &lt;a href=&quot;#!&quot; class=&quot;list-item list-icon&quot;&gt;
+        List item
+        &lt;i class=&quot;fas fa-caret-right fa-lg&quot;&gt;&lt;/i&gt;
+    &lt;/a&gt;
+    &lt;a href=&quot;#!&quot; class=&quot;list-item list-icon&quot;&gt;
+        List item
+        &lt;i class=&quot;fas fa-caret-right fa-lg&quot;&gt;&lt;/i&gt;
+    &lt;/a&gt;                        
+&lt;/ul&gt;</code><img class="copy-to-clipboard"src="../../assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="../../assets/icons/checked.svg" alt="Success icon"></pre>
+</article>
+
+<article class="section-scroll" id="badge">
+    <h2 class="b-b-light hash">Badge</h2>
+    <p class="secondary-lead">
+        Use the mesh badges to create notifications within the list. Use the <code class="inline">list-icon</code> class
+        and add the badge.
+        <br><strong>Note:</strong> you may need to add our color utility classes to achieve the right appearance, see
+        below:
+    </p>
+    <ul class="list">
+        <a href="#!" class="list-item list-icon">
+            List item
+            <div class="badge badge-primary badge-rounded">2</div>
+        </a>
+        <a href="#!" class="list-item list-icon active">
+            List item
+            <div class="badge badge-primary badge-rounded bg-white c-primary">4</div>
+        </a>
+        <a href="#!" class="list-item list-icon">
+            List item
+            <div class="badge badge-primary badge-rounded">14</div>
+        </a>
+    </ul>
+    <pre
+        class="highlight"><code class="html">&lt;ul class=&quot;list&quot;&gt;
+    &lt;a href=&quot;#!&quot; class=&quot;list-item list-icon&quot;&gt;
+        List item
+        &lt;div class=&quot;badge badge-primary badge-rounded&quot;&gt;2&lt;/div&gt;
+    &lt;/a&gt;                        
+    &lt;a href=&quot;#!&quot; class=&quot;list-item list-icon active&quot;&gt;
+        List item
+        &lt;div class=&quot;badge badge-primary badge-rounded bg-white c-primary&quot;&gt;4&lt;/div&gt;
+    &lt;/a&gt;
+    &lt;a href=&quot;#!&quot; class=&quot;list-item list-icon&quot;&gt;
+        List item
+        &lt;div class=&quot;badge badge-primary badge-rounded&quot;&gt;14&lt;/div&gt;
+    &lt;/a&gt;                        
+&lt;/ul&gt;</code><img class="copy-to-clipboard"src="../../assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="../../assets/icons/checked.svg" alt="Success icon"></pre>
+</article>
+
+<article class="section-scroll" id="monty">
+    <h2 class="b-b-light hash">Full monty</h2>
+    <p class="secondary-lead">
+        The possibilities are endless, here is taster of what you can achieve with our list component.
+    </p>
+    <ul class="list w-100 w-tab-60">
+        <a href="#!" class="list-item w-100 c-dark">
+            <div class="d-flex justify-content-between align-items-center my-2">
+                <h3 class="mb-0">List item heading</h3>
+                <div class="badge badge-primary">Posted 2 days ago</div>
+            </div>
+            <p>Kogi single-origin coffee farm-to-table letterpress keffiyeh heirloom. Helvetica cold-pressed readymade
+                meggings, echo park retro sartorial. +1 wolf subway tile, quinoa heirloom live-edge ethical letterpress
+                blog kale chips vape pok pok butcher. Everyday carry kombucha gochujang VHS, poke man braid copper mug
+                asymmetrical cronut. Man braid viral fashion axe thundercats try-hard church-key literally quinoa.</p>
+            <h6>Posted by Tiger Woods</h6>
+        </a>
+        <a href="#!" class="list-item active">
+            <div class="d-flex justify-content-between align-items-center my-2">
+                <h3 class="mb-0">List item heading</h3>
+                <div class="badge badge-white">Posted 5 days ago</div>
+            </div>
+            <p>Kogi single-origin coffee farm-to-table letterpress keffiyeh heirloom. Helvetica cold-pressed readymade
+                meggings, echo park retro sartorial. +1 wolf subway tile, quinoa heirloom live-edge ethical letterpress
+                blog kale chips vape pok pok butcher. Everyday carry kombucha gochujang VHS, poke man braid copper mug
+                asymmetrical cronut. Man braid viral fashion axe thundercats try-hard church-key literally quinoa.</p>
+            <h6>Posted by Gordon Ramsey</h6>
+        </a>
+        <a href="#!" class="list-item w-100 c-dark">
+            <div class="d-flex justify-content-between align-items-center my-2">
+                <h3 class="mb-0">List item heading</h3>
+                <div class="badge badge-primary">Posted 10 days ago</div>
+            </div>
+            <p>Kogi single-origin coffee farm-to-table letterpress keffiyeh heirloom. Helvetica cold-pressed readymade
+                meggings, echo park retro sartorial. +1 wolf subway tile, quinoa heirloom live-edge ethical letterpress
+                blog kale chips vape pok pok butcher. Everyday carry kombucha gochujang VHS, poke man braid copper mug
+                asymmetrical cronut. Man braid viral fashion axe thundercats try-hard church-key literally quinoa.</p>
+            <h6>Posted by Above & Beyond</h6>
+        </a>
+    </ul>
+    <pre
+        class="highlight"><code class="html">&lt;ul class=&quot;list w-100 w-tab-60&quot;&gt;
+    &lt;a href=&quot;#!&quot; class=&quot;list-item w-100 c-dark&quot;&gt;
+        &lt;div class=&quot;d-flex justify-content-between align-items-center my-2&quot;&gt;
+            &lt;h3 class=&quot;mb-0&quot;&gt;List item heading&lt;/h3&gt;
+            &lt;div class=&quot;badge badge-primary&quot;&gt;Posted 2 days ago&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;p&gt;Kogi single-origin coffee farm-to-table...&lt;/p&gt;
+        &lt;h6&gt;Posted by Tiger Woods&lt;/h6&gt;
+    &lt;/a&gt;                        
+    &lt;a href=&quot;#!&quot; class=&quot;list-item active&quot;&gt;
+        &lt;div class=&quot;d-flex justify-content-between align-items-center my-2&quot;&gt;
+            &lt;h3 class=&quot;mb-0&quot;&gt;List item heading&lt;/h3&gt;
+            &lt;div class=&quot;badge badge-white&quot;&gt;Posted 5 days ago&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;p&gt;Kogi single-origin coffee farm-to-table...&lt;/p&gt;
+        &lt;h6&gt;Posted by Gordon Ramsey&lt;/h6&gt;
+    &lt;/a&gt; 
+    &lt;a href=&quot;#!&quot; class=&quot;list-item w-100 c-dark&quot;&gt;
+        &lt;div class=&quot;d-flex justify-content-between align-items-center my-2&quot;&gt;
+            &lt;h3 class=&quot;mb-0&quot;&gt;List item heading&lt;/h3&gt;
+            &lt;div class=&quot;badge badge-primary&quot;&gt;Posted 10 days ago&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;p&gt;Kogi single-origin coffee farm-to-table...&lt;/p&gt;
+        &lt;h6&gt;Posted by Above &amp; Beyond&lt;/h6&gt;
+    &lt;/a&gt;                       
+&lt;/ul&gt;
+</code><img class="copy-to-clipboard"src="../../assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="../../assets/icons/checked.svg" alt="Success icon"></pre>
+</article>
+
+<!-- Variables -->
+<article class="section-scroll" id="variables">
+    <h2 class="b-b-light hash">Variables</h2>
+    <p class="secondary-lead">
+        Change border colors, active colors and disabled with the variables below.
+    </p>
+    <div class="table-scroll">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Variable</th>
+                    <th class="w-15">Value</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="vertical-align: middle;">
+                        <pre class="variables highlight"><code class="scss">$list-background-color: #fff;</code></pre>
+                    </td>
+                    <td>Color</td>
+                    <td>The default background color of the list component.</td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: middle;">
+                        <pre class="variables highlight"><code class="scss">$list-border-color: #ddd;</code></pre>
+                    </td>
+                    <td>Color</td>
+                    <td>The border color of the list component.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre
+                            class="variables highlight"><code class="scss">$list-active-color: color('primary');</code></pre>
+                    </td>
+                    <td>Color</td>
+                    <td>The active (user selected) color of the list component, the default takes the primary color from
+                        the color palette.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre class="variables highlight"><code class="scss">$list-disabled-color: #999;</code></pre>
+                    </td>
+                    <td>Color</td>
+                    <td>The disabled color of a list item.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</article>
+
+            </div><!-- /Col -->
+            <!-- =====================
+    Contents Nav
+    ===================== -->
+<div class="col-2 pr-0">
+    <aside class="smallnav h-100 d-none d-tab-block">
+        <div class="smallnav-cont p-sticky">
+            <ul class="table-of-contents b-b-light">
+                                <a href="#usage">
+                    <li class="contents-item" data-contentitem="usage">Usage</li>
+                </a>
+                                <a href="#active">
+                    <li class="contents-item" data-contentitem="active">Active</li>
+                </a>
+                                <a href="#disabled">
+                    <li class="contents-item" data-contentitem="disabled">Disabled</li>
+                </a>
+                                <a href="#link">
+                    <li class="contents-item" data-contentitem="link">Link</li>
+                </a>
+                                <a href="#icon">
+                    <li class="contents-item" data-contentitem="icon">Icon</li>
+                </a>
+                                <a href="#badge">
+                    <li class="contents-item" data-contentitem="badge">Badge</li>
+                </a>
+                                <a href="#monty">
+                    <li class="contents-item" data-contentitem="monty">Full monty</li>
+                </a>
+                                <a href="#variables">
+                    <li class="contents-item" data-contentitem="variables">Variables</li>
+                </a>
+                            </ul>
+            <ul class="community">
+                <li class="d-flex align-items-center">
+                    <img class="icon" src="../../assets/icons/edit.svg" alt="Edit icon">
+                    <a href="https://github.com/ainsleyclark/mesh/tree/master/documentation/documentation/list.md"
+                        target="_blank" class="hover ml-1">Edit this page</a>
+                </li>
+                <li class="d-flex align-items-center">
+                    <img class="icon" src="../../assets/icons/danger.svg" alt="Warning icon">
+                    <a href="https://github.com/ainsleyclark/mesh/issues" class="hover ml-1">Report a problem</a>
+                </li>
+                <li class="d-flex align-items-center">
+                    <img class="icon" src="../../assets/icons/chat-grey.svg" alt="Community icon">
+                    <a href="https://discord.gg/geBW7CN" target="_blank" class="hover ml-1">Ask the community</a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+</div><!-- /Col -->            <!-- =====================
+    Footer
+    ===================== -->
+<div class="col-12 footer-col">
+    <footer class="primary">
+        <div class="d-flex align-items-center justify-content-center flex-wrap h-100">
+            <span class="mb-1 my-desk-0 mx-3">Version 1.0.0</span>
+            <div class="icon-cont mb-1 my-desk-0 mx-3 d-inline-flex align-items-center">
+                <img class="footer-icon" src="../../assets/icons/chat.svg" alt="Github logo">
+                <a class="hover" href="https://discordapp.com/channels/569873903237857300/569873903237857304" target="_blank">Community</a>
+            </div>
+            <span class="mx-3 t-center">© 2014-2019 mesh, All rights reserved.</span>
+        </div>
+    </footer>
+</div><!-- /Col -->
+        </div><!-- /Row -->
+    </div><!-- /Container -->
+</section>
+
+        </main>
+        <script src="../../js/vendor/highlight/highlight.pack.js"></script>
+        <script src="../../js/app.js"></script>
+        <!-- =====================
+    Page JS (Place in <script></script> tags)
+    ===================== -->
+
+    </body>
+
+<!-- Mirrored from 127.0.0.1:8000/documentation/components/list by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Jul 2023 10:45:42 GMT -->
+</html>

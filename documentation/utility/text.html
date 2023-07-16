@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from 127.0.0.1:8000/documentation/utility/text by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Jul 2023 10:45:37 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Text | meshCSS</title>
+    <meta name="description" content="mesh includes a wide range of responsive and helpful utility classes for text. Responsive text is also included, great for decreasing size on smaller viewports.">
+    <link rel="canonical" href="https://www.meshcss.com/" />
+    <meta name="csrf" content="b51fKECi9twQ3j8eTInkU6xBzvJM4klQSX1wSLqw" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Open Graph -->
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Text">
+    <meta property="og:description" content="mesh includes a wide range of responsive and helpful utility classes for text. Responsive text is also included, great for decreasing size on smaller viewports.">
+    <meta property="og:url" content="https://www.meshcss.com/">
+    <meta property="og:site_name" content="mesh>">
+    <meta property="og:image" content="https://www.meshcss.com/">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:description" content="mesh includes a wide range of responsive and helpful utility classes for text. Responsive text is also included, great for decreasing size on smaller viewports.">
+    <meta name="twitter:title" content="Text">
+    <meta name="twitter:image" content="https://www.meshcss.com/">
+    <!-- CSS -->
+    
+    <!-- //! Consider using one style sheet here for font awesome -->
+    
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;display=swap" onload="this.rel='stylesheet'" as="style">
+    <link rel="preload" href="../../css/vendor/fontawesome/css/all.min.css" onload="this.rel='stylesheet'" as="style">
+
+    <link rel="prefetch" href="../../css/mesh.css" onload="this.rel='stylesheet'" as="style">
+    
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;display=swap"></noscript>
+    <link rel="stylesheet" type="text/css" href="../../css/app.css"> 
+    <noscript><link rel="stylesheet" href="../../css/vendor/fontawesome/css/all.min.css"></noscript>
+    <noscript><link rel="stylesheet" href="../../css/mesh.css"></noscript>
+    <noscript><link rel="stylesheet" href="../../css/app.css"></noscript>
+    <!-- =====================
+    Page CSS (Place in <style></style> tags)
+    ===================== -->
+<style>
+.font-size-2 {
+    font-size: 28px;
+}
+</style>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../assets/favicon/site.html">
+    <link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ff2451">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140877948-1"></script>
+    <script>
+    //! UNCOMMENT FOR GTAG
+    // window.dataLayer = window.dataLayer || [];
+    // function gtag(){dataLayer.push(arguments);}
+    // gtag('js', new Date());
+    // gtag('config', 'UA-140877948-1');
+    </script>
+</head>
+    <body>
+        <!--[if lte IE 9]>
+            <div class="outdated-browser">
+                <h2>You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</h2>
+            </div>
+        <![endif]-->
+        <!-- =====================
+    Header
+    ===================== -->
+
+<header class="primary d-flex align-items-center ">
+    <div class="container-fullwidth px-tab-4">
+        <div class="row">
+            <div class="col-6">
+                <a class="d-flex align-items-center logo-cont" href="../../index.html">
+                    <div class="logo-cont d-flex align-items-center">
+                        <img class="logo" src="../../assets/svg/meshlogo.svg" alt="mesh Logo">
+                    </div>
+                    <div class="text-cont d-none d-tab-block">
+                        <h3>meshCSS</h3>
+                    </div>
+                </a>
+            </div>
+            <!-- //! d none here for mobile -->
+            <div class="col-6 align-items-center justify-content-end d-none d-tab-flex">        
+                <nav class="primary">
+                    <ul class="d-flex align-items-center my-0 t-uppercase">
+                        <a class="hover" href="../getting-started/introduction.html"><li class="mx-3">Documentation</li></a>
+                        <a class="hover" href="https://github.com/ainsleyclark/mesh" target="_blank"><li class="mx-3">Github</li></a>
+                        <a class="ml-3" href="../thanks.html">
+                            <button class="btn btn-rounded btn-outline btn-primary btn-icon download">Download
+                            <svg class="ml-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 471.2 471.2" style="enable-background:new 0 0 471.2 471.2;" xml:space="preserve">
+                                <g>
+                                    <path d="M457.7,230.15c-7.5,0-13.5,6-13.5,13.5v122.8c0,33.4-27.2,60.5-60.5,60.5H87.5c-33.4,0-60.5-27.2-60.5-60.5v-124.8    c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5v124.8c0,48.3,39.3,87.5,87.5,87.5h296.2c48.3,0,87.5-39.3,87.5-87.5v-122.8    C471.2,236.25,465.2,230.15,457.7,230.15z" data-original="#000000" class="active-path" data-old_color="#ffffff" fill="#ffffff"/>
+                                    <path d="M226.1,346.75c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4l85.8-85.8c5.3-5.3,5.3-13.8,0-19.1c-5.3-5.3-13.8-5.3-19.1,0l-62.7,62.8    V30.75c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5v273.9l-62.8-62.8c-5.3-5.3-13.8-5.3-19.1,0c-5.3,5.3-5.3,13.8,0,19.1    L226.1,346.75z" data-original="#000000" class="active-path" data-old_color="#ffffff" fill="#ffffff"/>
+                                </g>
+                            </svg>
+                            </button>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div> 
+</header>        <main class="page-text">
+            <div class="header-spacer"></div>
+<!-- =====================
+    Side Navigation
+    ===================== -->
+<aside class="sidenav">
+    <h3>Documentation</h3>
+    <ul class="main-list color-black">
+        <!-- Getting Started -->
+        <li class="my-4">
+            <div class="nav-header b-b-light pb-2">Getting Started</div>
+            <ul class="sub-list mt-1">
+                <a class=""
+                    href="../getting-started/introduction.html">
+                    <li>Introduction</li>
+                </a>
+                <a class=""
+                    href="../getting-started/installation.html">
+                    <li>Installation</li>
+                </a>
+                <a class="" href="../../builder.html">
+                    <li>meshBuilder</li>
+                </a>
+                <a class=""
+                    href="../getting-started/javascript.html">
+                    <li>Javascript</li>
+                </a>
+                <a class=""
+                    href="../getting-started/notation.html">
+                    <li>Notation</li>
+                </a>
+            </ul>
+        </li>
+        <!-- Grid -->
+        <li class="my-4">
+            <div class="nav-header b-b-light pb-2">Grid</div>
+            <ul class="sub-list mt-1">
+                <a class="" href="../grid/grid.html">
+                    <li>Grid</li>
+                </a>
+                <a class="" href="../grid/flex.html">
+                    <li>Flex</li>
+                </a>
+                <a class="" href="../grid/order.html">
+                    <li>Order</li>
+                </a>
+                <a class="" href="../grid/display.html">
+                    <li>Display</li>
+                </a>
+            </ul>
+        </li>
+        <!-- Utility -->
+        <li class="my-4">
+            <div class="nav-header b-b-light pb-2">Utility</div>
+            <ul class="sub-list mt-1">
+                <a class="" href="borders.html">
+                    <li>Borders</li>
+                </a>
+                <a class="" href="colors.html">
+                    <li>Colors</li>
+                </a>
+                <a class="" href="float.html">
+                    <li>Float</li>
+                </a>
+                <a class="" href="media.html">
+                    <li>Media</li>
+                </a>
+                <a class="" href="position.html">
+                    <li>Position</li>
+                </a>
+                <a class="" href="sizing.html">
+                    <li>Sizing</li>
+                </a>
+                <a class="" href="spacers.html">
+                    <li>Spacers</li>
+                </a>
+                <a class="" href="spacing.html">
+                    <li>Spacing</li>
+                </a>
+                <a class="active" href="text.html">
+                    <li>Text</li>
+                </a>
+                <a class="" href="visibility.html">
+                    <li>Visibility</li>
+                </a>
+            </ul>
+        </li>
+        <!-- Components -->
+        <li class="my-4">
+            <div class="nav-header b-b-light pb-2">Components</div>
+            <ul class="sub-list mt-1">
+                <a class="" href="../components/alert.html">
+                    <li>Alert</li>
+                </a>
+                <a class="" href="../components/badges.html">
+                    <li>Badges</li>
+                </a>
+                <a class=""
+                    href="../components/breadcrumb.html">
+                    <li>Breadcrumbs</li>
+                </a>
+                <a class="" href="../components/button.html">
+                    <li>Button</li>
+                </a>
+                <a class="" href="../components/card.html">
+                    <li>Card</li>
+                </a>
+                <a class="" href="../components/collapse.html">
+                    <li>Collapse</li>
+                </a>
+                <a class="" href="../components/epic.html">
+                    <li>Epic</li>
+                </a>
+                <a class="" href="../components/form.html">
+                    <li>Form</li>
+                </a>
+                <a class="" href="../components/list.html">
+                    <li>List</li>
+                </a>
+                <a class="" href="../components/modal.html">
+                    <li>Modal</li>
+                </a>
+                <a class="" href="../components/nav.html">
+                    <li>Nav</li>
+                </a>
+                <a class="" href="../components/navbar.html">
+                    <li>Navbar</li>
+                </a>
+                <a class=""
+                    href="../components/pagination.html">
+                    <li>Pagination</li>
+                </a>
+                <a class="" href="../components/table.html">
+                    <li>Table</li>
+                </a>
+                <a class="" href="../components/tabs.html">
+                    <li>Tabs</li>
+                </a>
+                <a class="" href="../components/toast.html">
+                    <li>Toasts</li>
+                </a>
+                <a class="" href="../components/tooltip.html">
+                    <li>Tooltip</li>
+                </a>
+            </ul>
+        </li>
+    </ul>
+</aside>
+<section class="content button-page">
+    <div class="container-fullwidth">
+        <div class="row justify-content-center mt-4 mt-desk-5">
+            <div class="col-12 col-tab-9 col-desk-8 mr-desk-2 px-desk-4">
+                <h1 class="mb-2 mt-0">Text</h1>
+                <div class="lead">mesh includes a wide range of responsive and helpful utility classes for text. Responsive text is also included, great for decreasing size on smaller viewports.</div>
+                <!-- =====================
+    Docs Section - Main HTML
+    ===================== -->
+
+<!-- Font Sizes -->
+<article class="section-scroll" id="sizes">
+    <h2 class="b-b-light hash">Font sizes</h2>
+    <p class="secondary-lead">
+        Default font sizes are shown below, margin is calculated automatically based on the size.
+    </p>
+    <div class="text-cont">
+        <h1 class="normal-headings">h1 Heading</h1>
+        <h2 class="normal-headings">h2 Heading</h2>
+        <h3 class="normal-headings">h3 Heading</h3>
+        <h4 class="normal-headings">h4 Heading</h4>
+        <h5 class="normal-headings">h5 Heading</h5>
+        <h6 class="normal-headings">h6 Heading</h6>
+    </div>
+</article>
+
+<!-- Font Sizes -->
+<article class="section-scroll" id="sub">
+    <h2 class="b-b-light hash">Sub headings</h2>
+    <p class="secondary-lead">A lead class is available by applying <code class="inline">.lead</code> to your element.
+        This text is perfect for sub headings on pages and large paragraphs.</p>
+    <div class="text-cont bg-light br p-3">
+        <h1 class="normal-headings">Welcome to mesh</h1>
+        <p class="lead">I'm an example sub heading using the lead class.</p>
+    </div>
+
+    <pre
+        class="highlight mt-3"><code class="html py-2">&lt;h1&gt;Welcome to mesh&lt;/h1&gt;
+&lt;p class="lead"&gtI'm an example sub heading using the lead class.&lt;/p&gt;</code><img class="copy-to-clipboard"src="../../assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="../../assets/icons/checked.svg" alt="Success icon"></pre>
+</article>
+
+<!-- Unresponsive -->
+<article class="section-scroll" id="utility">
+    <h2 class="b-b-light hash">Utility classes</h2>
+    <p class="secondary-lead">
+        A number of text utility helper classes have been bundled with mesh to help with creating font styles quickly.
+    </p>
+    <div class="text-cont">
+        <h3>Notation:</h3>
+        <ul class="list-line">
+            <li>All text classes shown below are prefixed with <code class="inline">t-{helper}</code> for text.</li>
+        </ul>
+    </div>
+    <div class="text-cont">
+        <h3>Properties:</h3>
+        <table class="table-code w-100 t-left">
+            <col width="100">
+            <col width="100">
+            <thead>
+                <tr>
+                    <th>Class</th>
+                    <th>Properties</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>.t-decoration-none</td>
+                    <td>text-decoration: none;</td>
+                </tr>
+                <tr>
+                    <td>.t-normal</td>
+                    <td>font-weight: normal;</td>
+                </tr>
+                <tr>
+                    <td>.t-bold</td>
+                    <td>font-weight: bold;</td>
+                </tr>
+                <tr>
+                    <td>.t-light</td>
+                    <td>font-weight: light;</td>
+                </tr>
+                <tr>
+                    <td>.t-italic</td>
+                    <td>font-style: italic;</td>
+                </tr>
+                <tr>
+                    <td>.t-uppercase</td>
+                    <td>text-transform: uppercase;</td>
+                </tr>
+                <tr>
+                    <td>.t-lowercase</td>
+                    <td>text-transform: lowercase;</td>
+                </tr>
+                <tr>
+                    <td>.t-initial</td>
+                    <td>text-transform: initial;</td>
+                </tr>
+                <tr>
+                    <td>.t-nowrap</td>
+                    <td>white-space: nowrap;</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</article>
+
+<!-- Responsive Text -->
+<article class="section-scroll" id="responsive">
+    <h2 class="b-b-light hash">Responsive text</h2>
+    <p class="secondary-lead">Below is a demo of our responsive text class, you can target it by using the <code
+            class="inline">t-responsive</code> class.</p>
+    <button class="btn btn-rounded btn-secondary" id="responsiveTextBtn">Turn responsive text off</button>
+    <div class="text-cont">
+        <p class="t-responsive" id="responsiveText">With responsive text, the font size gradually gets smaller on
+            different viewports. Its totally customizable, you can adjust the base font size and how many points you
+            would like. Go ahead and resize the screen to watch me get smaller!</p>
+    </div>
+</article>
+
+<!-- Alignment -->
+<article class="section-scroll" id="align">
+    <h2 class="b-b-light hash">Alignment</h2>
+    <p class="secondary-lead">
+        Text alignment is simple with mesh, you can adjust it responsively by using <code
+            class="inline">t-{breakpoint}-{property}</code> The optional breakpoint can be one of our five
+        breakpoints, outlined below.
+    </p>
+    <div class="text-cont">
+        <table class="table-code w-100 t-left mt-3">
+            <col width="100">
+            <col width="100">
+            <thead>
+                <tr>
+                    <th>Class</th>
+                    <th>Properties</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>.t-center</td>
+                    <td>text-align: center;</td>
+                </tr>
+                <tr>
+                    <td>.t-left</td>
+                    <td>text-align: left;</td>
+                </tr>
+                <tr>
+                    <td>.t-right</td>
+                    <td>text-align: right;</td>
+                </tr>
+                <tr>
+                    <td>.t-justify</td>
+                    <td>text-align: center;</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h3 class="mt-3">Responsive variations:</h3>
+    <pre
+        class="highlight"><code class="html">&lt;!-- Default --&gt;
+&lt;div class="t-center"&gt;&lt;/div&gt;
+&lt;div class="t-left"&gt;&lt;/div&gt;
+&lt;div class="t-right"&gt;&lt;/div&gt;
+&lt;div class="t-justify"&gt;&lt;/div&gt;
+&lt;!-- Mobile --&gt;
+&lt;div class="t-mob-center"&gt;&lt;/div&gt;
+&lt;div class="t-mob-left"&gt;&lt;/div&gt;
+&lt;div class="t-mob-right"&gt;&lt;/div&gt;
+&lt;div class="t-mob-justify"&gt;&lt;/div&gt;
+&lt;!-- Tablet --&gt;
+&lt;div class="t-tab-center"&gt;&lt;/div&gt;
+&lt;div class="t-tab-left"&gt;&lt;/div&gt;
+&lt;div class="t-tab-right"&gt;&lt;/div&gt;
+&lt;div class="t-tab-justify"&gt;&lt;/div&gt;
+&lt;!-- Desktop --&gt;
+&lt;div class="t-desk-center"&gt;&lt;/div&gt;
+&lt;div class="t-desk-left"&gt;&lt;/div&gt;
+&lt;div class="t-desk-right"&gt;&lt;/div&gt;
+&lt;div class="t-desk-justify"&gt;&lt;/div&gt;
+&lt;!-- HD --&gt;
+&lt;div class="t-hd-center"&gt;&lt;/div&gt;
+&lt;div class="t-hd-left"&gt;&lt;/div&gt;
+&lt;div class="t-hd-right"&gt;&lt;/div&gt;
+&lt;div class="t-hd-justify"&gt;&lt;/div&gt;</code><img class="copy-to-clipboard"src="../../assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="../../assets/icons/checked.svg" alt="Success icon"></pre>
+</article>
+
+<!-- Variables -->
+<article class="section-scroll" id="variables">
+    <h2 class="b-b-light hash">Variables</h2>
+    <p class="secondary-lead">
+        Define text sizes, colors, different fonts and responsive text options with the variables below.
+    </p>
+    <div class="table-scroll">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Variable</th>
+                    <th class="w-20">Value</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <pre
+                            class="variables highlight"><code class="scss">$type-enable-responsive-text: true;</code></pre>
+                    </td>
+                    <td>Boolean</td>
+                    <td>Enables/disables the responsive text class.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre class="variables highlight"><code class="scss">$font-stack: Roboto, -apple-system, 
+BlinkMacSystemFont, 'Segoe UI', 
+Oxygen-Sans, Ubuntu, Cantarell, 
+'Helvetica Neue', sans-serif;</code></pre>
+                    </td>
+                    <td>CSS font family</td>
+                    <td>Add your chosen font stack here, to use "Roboto" (default for mesh) make sure you use a google
+                        import.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre class="variables highlight"><code class="scss">$h1-font-size: 3.31rem;</code></pre>
+                    </td>
+                    <td>Pixel/em/rem</td>
+                    <td>H1 font size in pixels, ems or rems.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre class="variables highlight"><code class="scss">$h2-font-size: 2.25rem;</code></pre>
+                    </td>
+                    <td>Pixel/em/rem</td>
+                    <td>H2 font size in pixels, ems or rems.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre class="variables highlight"><code class="scss">$h3-font-size: 1.56rem;</code></pre>
+                    </td>
+                    <td>Pixel/em/rem</td>
+                    <td>H3 font size in pixels, ems or rems.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre class="variables highlight"><code class="scss">$h4-font-size: 1.12rem;</code></pre>
+                    </td>
+                    <td>Pixel/em/rem</td>
+                    <td>H4 font size in pixels, ems or rems.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre class="variables highlight"><code class="scss">$h5-font-size: 1.06rem;</code></pre>
+                    </td>
+                    <td>Pixel/em/rem</td>
+                    <td>H5 font size in pixels, ems or rems.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre class="variables highlight"><code class="scss">$h6-font-size: 0.75rem;</code></pre>
+                    </td>
+                    <td>Pixel/em/rem</td>
+                    <td>H6 font size in pixels, ems or rems.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre class="variables highlight"><code class="scss">$lead-font-size: 1.25rem;</code></pre>
+                    </td>
+                    <td>Pixel/em/rem</td>
+                    <td>Lead font size in pixels, ems or rems.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre class="variables highlight"><code class="scss">$paragraph-font-size: 1rem;</code></pre>
+                    </td>
+                    <td>Pixel/em/rem</td>
+                    <td>Paragraph font size in pixels, ems or rems.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre class="variables highlight"><code class="scss">$small-font-size: 75%;</code></pre>
+                    </td>
+                    <td>Percentage/pixel/em/rem</td>
+                    <td>Small tag font size in percentage, pixels, ems or rems.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre class="variables highlight"><code class="scss">$black-text-color: #3c4858;</code></pre>
+                    </td>
+                    <td>Color</td>
+                    <td><strong>Important:</strong>defines the color of all text, the mesh default uses an off black.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre class="variables highlight"><code class="scss">$white-text-color: #ffffff;</code></pre>
+                    </td>
+                    <td>Color</td>
+                    <td>Defines the white shade of text.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre class="variables highlight"><code class="scss">$responsive-text-points: 30;</code></pre>
+                    </td>
+                    <td>Number</td>
+                    <td>How many breakpoints the <code class="inline">t-responsive</code> (responsive text) class uses.
+                        Please bear in mind that the more you use, the smoother it will become but at a cost to kb.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</article>
+
+            </div><!-- /Col -->
+            <!-- =====================
+    Contents Nav
+    ===================== -->
+<div class="col-2 pr-0">
+    <aside class="smallnav h-100 d-none d-tab-block">
+        <div class="smallnav-cont p-sticky">
+            <ul class="table-of-contents b-b-light">
+                                <a href="#sizes">
+                    <li class="contents-item" data-contentitem="sizes">Font sizes</li>
+                </a>
+                                <a href="#sub">
+                    <li class="contents-item" data-contentitem="sub">Sub headings</li>
+                </a>
+                                <a href="#examples">
+                    <li class="contents-item" data-contentitem="examples">Examples</li>
+                </a>
+                                <a href="#utility">
+                    <li class="contents-item" data-contentitem="utility">Utility classes</li>
+                </a>
+                                <a href="#responsive">
+                    <li class="contents-item" data-contentitem="responsive">Responsive text</li>
+                </a>
+                                <a href="#align">
+                    <li class="contents-item" data-contentitem="align">Alignment</li>
+                </a>
+                                <a href="#variables">
+                    <li class="contents-item" data-contentitem="variables">Variables</li>
+                </a>
+                            </ul>
+            <ul class="community">
+                <li class="d-flex align-items-center">
+                    <img class="icon" src="../../assets/icons/edit.svg" alt="Edit icon">
+                    <a href="https://github.com/ainsleyclark/mesh/tree/master/documentation/documentation/text.md"
+                        target="_blank" class="hover ml-1">Edit this page</a>
+                </li>
+                <li class="d-flex align-items-center">
+                    <img class="icon" src="../../assets/icons/danger.svg" alt="Warning icon">
+                    <a href="https://github.com/ainsleyclark/mesh/issues" class="hover ml-1">Report a problem</a>
+                </li>
+                <li class="d-flex align-items-center">
+                    <img class="icon" src="../../assets/icons/chat-grey.svg" alt="Community icon">
+                    <a href="https://discord.gg/geBW7CN" target="_blank" class="hover ml-1">Ask the community</a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+</div><!-- /Col -->            <!-- =====================
+    Footer
+    ===================== -->
+<div class="col-12 footer-col">
+    <footer class="primary">
+        <div class="d-flex align-items-center justify-content-center flex-wrap h-100">
+            <span class="mb-1 my-desk-0 mx-3">Version 1.0.0</span>
+            <div class="icon-cont mb-1 my-desk-0 mx-3 d-inline-flex align-items-center">
+                <img class="footer-icon" src="../../assets/icons/chat.svg" alt="Github logo">
+                <a class="hover" href="https://discordapp.com/channels/569873903237857300/569873903237857304" target="_blank">Community</a>
+            </div>
+            <span class="mx-3 t-center">© 2014-2019 mesh, All rights reserved.</span>
+        </div>
+    </footer>
+</div><!-- /Col -->
+        </div><!-- /Row -->
+    </div><!-- /Container -->
+</section>
+
+        </main>
+        <script src="../../js/vendor/highlight/highlight.pack.js"></script>
+        <script src="../../js/app.js"></script>
+        <!-- =====================
+    Page JS (Place in <script></script> tags)
+    ===================== -->
+    
+    </body>
+
+<!-- Mirrored from 127.0.0.1:8000/documentation/utility/text by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Jul 2023 10:45:37 GMT -->
+</html>

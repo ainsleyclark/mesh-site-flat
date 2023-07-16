@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from 127.0.0.1:8000/documentation/components/toast by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Jul 2023 10:45:42 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Toasts | meshCSS</title>
+    <meta name="description" content="Use our stylish snack-bars to display informative content easily, you can even use our JS code to have them appear and fade out.">
+    <link rel="canonical" href="https://www.meshcss.com/" />
+    <meta name="csrf" content="b51fKECi9twQ3j8eTInkU6xBzvJM4klQSX1wSLqw" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Open Graph -->
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Toasts">
+    <meta property="og:description" content="Use our stylish snack-bars to display informative content easily, you can even use our JS code to have them appear and fade out.">
+    <meta property="og:url" content="https://www.meshcss.com/">
+    <meta property="og:site_name" content="mesh>">
+    <meta property="og:image" content="https://www.meshcss.com/">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:description" content="Use our stylish snack-bars to display informative content easily, you can even use our JS code to have them appear and fade out.">
+    <meta name="twitter:title" content="Toasts">
+    <meta name="twitter:image" content="https://www.meshcss.com/">
+    <!-- CSS -->
+    
+    <!-- //! Consider using one style sheet here for font awesome -->
+    
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;display=swap" onload="this.rel='stylesheet'" as="style">
+    <link rel="preload" href="../../css/vendor/fontawesome/css/all.min.css" onload="this.rel='stylesheet'" as="style">
+
+    <link rel="prefetch" href="../../css/mesh.css" onload="this.rel='stylesheet'" as="style">
+    
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;display=swap"></noscript>
+    <link rel="stylesheet" type="text/css" href="../../css/app.css"> 
+    <noscript><link rel="stylesheet" href="../../css/vendor/fontawesome/css/all.min.css"></noscript>
+    <noscript><link rel="stylesheet" href="../../css/mesh.css"></noscript>
+    <noscript><link rel="stylesheet" href="../../css/app.css"></noscript>
+    <!-- =====================
+    Page CSS (Place in <style></style> tags)
+    ===================== -->
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../assets/favicon/site.html">
+    <link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ff2451">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140877948-1"></script>
+    <script>
+    //! UNCOMMENT FOR GTAG
+    // window.dataLayer = window.dataLayer || [];
+    // function gtag(){dataLayer.push(arguments);}
+    // gtag('js', new Date());
+    // gtag('config', 'UA-140877948-1');
+    </script>
+</head>
+    <body>
+        <!--[if lte IE 9]>
+            <div class="outdated-browser">
+                <h2>You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</h2>
+            </div>
+        <![endif]-->
+        <!-- =====================
+    Header
+    ===================== -->
+
+<header class="primary d-flex align-items-center ">
+    <div class="container-fullwidth px-tab-4">
+        <div class="row">
+            <div class="col-6">
+                <a class="d-flex align-items-center logo-cont" href="../../index.html">
+                    <div class="logo-cont d-flex align-items-center">
+                        <img class="logo" src="../../assets/svg/meshlogo.svg" alt="mesh Logo">
+                    </div>
+                    <div class="text-cont d-none d-tab-block">
+                        <h3>meshCSS</h3>
+                    </div>
+                </a>
+            </div>
+            <!-- //! d none here for mobile -->
+            <div class="col-6 align-items-center justify-content-end d-none d-tab-flex">        
+                <nav class="primary">
+                    <ul class="d-flex align-items-center my-0 t-uppercase">
+                        <a class="hover" href="../getting-started/introduction.html"><li class="mx-3">Documentation</li></a>
+                        <a class="hover" href="https://github.com/ainsleyclark/mesh" target="_blank"><li class="mx-3">Github</li></a>
+                        <a class="ml-3" href="../thanks.html">
+                            <button class="btn btn-rounded btn-outline btn-primary btn-icon download">Download
+                            <svg class="ml-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 471.2 471.2" style="enable-background:new 0 0 471.2 471.2;" xml:space="preserve">
+                                <g>
+                                    <path d="M457.7,230.15c-7.5,0-13.5,6-13.5,13.5v122.8c0,33.4-27.2,60.5-60.5,60.5H87.5c-33.4,0-60.5-27.2-60.5-60.5v-124.8    c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5v124.8c0,48.3,39.3,87.5,87.5,87.5h296.2c48.3,0,87.5-39.3,87.5-87.5v-122.8    C471.2,236.25,465.2,230.15,457.7,230.15z" data-original="#000000" class="active-path" data-old_color="#ffffff" fill="#ffffff"/>
+                                    <path d="M226.1,346.75c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4l85.8-85.8c5.3-5.3,5.3-13.8,0-19.1c-5.3-5.3-13.8-5.3-19.1,0l-62.7,62.8    V30.75c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5v273.9l-62.8-62.8c-5.3-5.3-13.8-5.3-19.1,0c-5.3,5.3-5.3,13.8,0,19.1    L226.1,346.75z" data-original="#000000" class="active-path" data-old_color="#ffffff" fill="#ffffff"/>
+                                </g>
+                            </svg>
+                            </button>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div> 
+</header>        <main class="page-toast">
+            <div class="header-spacer"></div>
+<!-- =====================
+    Side Navigation
+    ===================== -->
+<aside class="sidenav">
+    <h3>Documentation</h3>
+    <ul class="main-list color-black">
+        <!-- Getting Started -->
+        <li class="my-4">
+            <div class="nav-header b-b-light pb-2">Getting Started</div>
+            <ul class="sub-list mt-1">
+                <a class=""
+                    href="../getting-started/introduction.html">
+                    <li>Introduction</li>
+                </a>
+                <a class=""
+                    href="../getting-started/installation.html">
+                    <li>Installation</li>
+                </a>
+                <a class="" href="../../builder.html">
+                    <li>meshBuilder</li>
+                </a>
+                <a class=""
+                    href="../getting-started/javascript.html">
+                    <li>Javascript</li>
+                </a>
+                <a class=""
+                    href="../getting-started/notation.html">
+                    <li>Notation</li>
+                </a>
+            </ul>
+        </li>
+        <!-- Grid -->
+        <li class="my-4">
+            <div class="nav-header b-b-light pb-2">Grid</div>
+            <ul class="sub-list mt-1">
+                <a class="" href="../grid/grid.html">
+                    <li>Grid</li>
+                </a>
+                <a class="" href="../grid/flex.html">
+                    <li>Flex</li>
+                </a>
+                <a class="" href="../grid/order.html">
+                    <li>Order</li>
+                </a>
+                <a class="" href="../grid/display.html">
+                    <li>Display</li>
+                </a>
+            </ul>
+        </li>
+        <!-- Utility -->
+        <li class="my-4">
+            <div class="nav-header b-b-light pb-2">Utility</div>
+            <ul class="sub-list mt-1">
+                <a class="" href="../utility/borders.html">
+                    <li>Borders</li>
+                </a>
+                <a class="" href="../utility/colors.html">
+                    <li>Colors</li>
+                </a>
+                <a class="" href="../utility/float.html">
+                    <li>Float</li>
+                </a>
+                <a class="" href="../utility/media.html">
+                    <li>Media</li>
+                </a>
+                <a class="" href="../utility/position.html">
+                    <li>Position</li>
+                </a>
+                <a class="" href="../utility/sizing.html">
+                    <li>Sizing</li>
+                </a>
+                <a class="" href="../utility/spacers.html">
+                    <li>Spacers</li>
+                </a>
+                <a class="" href="../utility/spacing.html">
+                    <li>Spacing</li>
+                </a>
+                <a class="" href="../utility/text.html">
+                    <li>Text</li>
+                </a>
+                <a class="" href="../utility/visibility.html">
+                    <li>Visibility</li>
+                </a>
+            </ul>
+        </li>
+        <!-- Components -->
+        <li class="my-4">
+            <div class="nav-header b-b-light pb-2">Components</div>
+            <ul class="sub-list mt-1">
+                <a class="" href="alert.html">
+                    <li>Alert</li>
+                </a>
+                <a class="" href="badges.html">
+                    <li>Badges</li>
+                </a>
+                <a class=""
+                    href="breadcrumb.html">
+                    <li>Breadcrumbs</li>
+                </a>
+                <a class="" href="button.html">
+                    <li>Button</li>
+                </a>
+                <a class="" href="card.html">
+                    <li>Card</li>
+                </a>
+                <a class="" href="collapse.html">
+                    <li>Collapse</li>
+                </a>
+                <a class="" href="epic.html">
+                    <li>Epic</li>
+                </a>
+                <a class="" href="form.html">
+                    <li>Form</li>
+                </a>
+                <a class="" href="list.html">
+                    <li>List</li>
+                </a>
+                <a class="" href="modal.html">
+                    <li>Modal</li>
+                </a>
+                <a class="" href="nav.html">
+                    <li>Nav</li>
+                </a>
+                <a class="" href="navbar.html">
+                    <li>Navbar</li>
+                </a>
+                <a class=""
+                    href="pagination.html">
+                    <li>Pagination</li>
+                </a>
+                <a class="" href="table.html">
+                    <li>Table</li>
+                </a>
+                <a class="" href="tabs.html">
+                    <li>Tabs</li>
+                </a>
+                <a class="active" href="toast.html">
+                    <li>Toasts</li>
+                </a>
+                <a class="" href="tooltip.html">
+                    <li>Tooltip</li>
+                </a>
+            </ul>
+        </li>
+    </ul>
+</aside>
+<section class="content button-page">
+    <div class="container-fullwidth">
+        <div class="row justify-content-center mt-4 mt-desk-5">
+            <div class="col-12 col-tab-9 col-desk-8 mr-desk-2 px-desk-4">
+                <h1 class="mb-2 mt-0">Toasts</h1>
+                <div class="lead">Use our stylish snack-bars to display informative content easily, you can even use our JS code to have them appear and fade out.</div>
+                <!-- =====================
+    Docs Section - Main HTML
+    ===================== -->
+<!-- Usage -->
+<article class="section-scroll" id="usage">
+    <h2 class="b-b-light hash">Usage</h2>
+    <p class="secondary-lead">
+        Toasts are great for showing meaningful content easily and provide brief messages about processes of the app the user is working with.
+        <br>As they only appear temporarily, <strong>they can't be done with CSS alone</strong>. Which is why we have provided a stupidly simple script to help you at the bottom of the page.
+        <br>Checkout the demo below.
+    </p>
+    <button class="btn btn-primary" id="makeToast">Make me some toast</button>
+    <div class="toast-cont">
+        <div class="toast toast-bottom-right"></div>
+    </div>
+    <div class="text-cont">
+        <h3>Notation:</h3>
+        <ul class="list-line">
+            <li>It's recommended you use our script below but it's entirely up to you, you can create your own!</li>
+            <li>The toast container is prefixed with the class <code class="inline">toast</code> it is positioned absolutley by default, but you can position toasts using our position classes below or using our pin classes, see our <a href="../utilities/position.html">position page</a> for more details.</li>
+            <li>The tost content is wrapped with the class <code class="inline">toast-body</code>. This is the class to set colors on.</li>
+        </ul>
+    </div>
+    <pre class="highlight mb-5"><code class="html">&lt;!-- Without toast body (using our JS) --&gt;
+&lt;div class=&quot;toast toast-bottom-right&quot;&gt;&lt;/div&gt;
+&lt;!-- With toast body (using your JS) --&gt;
+&lt;div class=&quot;toast toast-bottom-right&quot;&gt;
+    &lt;div class=&quot;toast-body bg-primary&quot;&gt;Mmmmmmmmm toast&lt;/div&gt;
+&lt;/div&gt;</code><img class="copy-to-clipboard"src="../../assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="../../assets/icons/checked.svg" alt="Success icon"></pre>
+</article>
+
+<!-- Position -->
+<article class="section-scroll" id="position">
+    <h2 class="b-b-light hash">Position</h2>
+    <p class="secondary-lead">
+        You can use the toast position classes to make them fixed, and align them to the viewport, see the buttons below & classes below.
+        <strong>Alternatively</strong> you can use the pin classes, which will pin the toast to the parent of the <code class="inline">toast</code> container.
+    </p>
+    <div class="button-cont d-flex justify-content-center flex-wrap">
+            <button class="btn btn-primary mx-1 toast-btn" id="toastTopRight">Top right</button>
+            <button class="btn btn-primary mx-1 toast-btn" id="toastTopLeft">Top left</button>
+            <button class="btn btn-primary mx-1 toast-btn" id="toastTopCenter">Top center</button>
+            <div class="w-100"></div>
+            <button class="btn btn-primary mx-1 toast-btn" id="toastBottomRight">Bottom right</button>
+            <button class="btn btn-primary mx-1 toast-btn" id="toastBottomLeft">Bottom left</button>
+            <button class="btn btn-primary mx-1 toast-btn" id="toastBottomCenter">Bottom center</button>
+    </div>
+    <div class="toast-cont">
+        <div class="toast toast-top-right" data-toast="toastTopRight"></div>
+        <div class="toast toast-top-left" data-toast="toastTopLeft"></div>
+        <div class="toast toast-top-center" data-toast="toastTopCenter"></div>
+        <div class="toast toast-bottom-right" data-toast="toastBottomRight"></div>
+        <div class="toast toast-bottom-left" data-toast="toastBottomRight"></div>
+        <div class="toast toast-bottom-center" data-toast="toastBottomLeft"></div>
+        <div class="toast toast-bottom-right" data-toast="toastBottomCenter"></div>
+    </div>
+    <pre class="highlight mb-5"><code class="html">&lt;div class=&quot;toast toast-top-right&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;toast toast-top-left&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;toast toast-top-center&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;toast toast-bottom-right&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;toast toast-bottom-left&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;toast toast-bottom-center&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;toast toast-bottom-right&quot;&gt;&lt;/div&gt;</code><img class="copy-to-clipboard"src="../../assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="../../assets/icons/checked.svg" alt="Success icon"></pre>
+</article>
+
+<!-- Icon -->
+<article class="section-scroll" id="icon">
+    <h2 class="b-b-light hash">Icon</h2>
+    <p class="secondary-lead">
+        You can use the toast position classes to make them fixed, and align them to the viewport, see the buttons below & classes below.
+        <strong>Alternatively</strong> you can use the pin classes, which will pin the toast to the parent of the <code class="inline">toast</code> container.
+    </p>
+    <div class="button-cont d-flex justify-content-center flex-wrap">
+        <button class="btn btn-primary mx-1 toast-btn" id="toastTopRight">With icon</button>
+    </div>
+    <div class="toast-cont">
+        <div class="toast toast-bottom-right" data-toast="toastBottomRight"></div>
+    </div>
+    <pre class="highlight mb-5"><code class="html">
+
+    </code><img class="copy-to-clipboard"src="../../assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="../../assets/icons/checked.svg" alt="Success icon"></pre>
+</article>
+
+<!-- Javascript -->
+<article class="section-scroll" id="javascript">
+    <h2 class="b-b-light hash">Javascript</h2>
+    <p class="secondary-lead">
+        Copy & paste our toast script below to achieve the toast effect. The toast object accepts two objects:
+    </p>
+    <div class="text-cont my-3">
+        <ul class="list-line">
+            <li>The first being any HTML markup you want to display within the toast. Handy for icons & </li>
+            <li>The second being an object which has a display time property (passed in with seconds) and a classes property, allowing you to pass in any classes you want to append to to the <code class="inline">toast-body</code> element.</li>
+        </ul>
+    </div>
+    <pre class="highlight mb-3"><code class="javascript">meshToast('mesh toast', { displayTime: '5s' });
+meshToast('mesh toast', { displayTime: '5s', classes: 'bg-secondary' });</code><img class="copy-to-clipboard"src="../../assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="../../assets/icons/checked.svg" alt="Success icon"></pre>
+    <div class="text-cont mb-3">
+        <h3>Script</h3>
+    </div>
+    <pre class="highlight mb-3"><code class="javascript">function meshToast(text, opts = {}) {
+
+        const defaults = {
+            classes: "bg-primary"
+        };
+
+        const options = Object.assign(defaults, opts);
+        const toastContainer = document.getElementsByClassName("toast")[0];
+        const toastBody = document.createElement("div");
+        const toastText = document.createElement("span");
+
+        toastBody.setAttribute('class', "toast-body " + options.classes);
+        toastText.innerHTML = text;
+        toastBody.appendChild(toastText);
+        toastContainer.appendChild(toastBody);
+
+        toastBody.addEventListener("animationend", e => {
+            toastBody.remove(1);
+        });
+
+        toastBody.classList.add("toast-show");
+        if (options.displayTime) {
+            toastBody.style.animationDuration = options.displayTime;
+        }
+    }</code><img class="copy-to-clipboard"src="../../assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="../../assets/icons/checked.svg" alt="Success icon"></pre>
+</article>
+
+
+
+<!-- Variables -->
+<article class="section-scroll" id="variables">
+    <h2 class="b-b-light hash">Variables</h2>
+    <p class="secondary-lead">
+        Add a description here:
+    </p>
+    <div class="table-scroll">
+        <table class="table">
+                <thead>
+                    <tr>
+                        <th>Variable</th>
+                        <th class="w-20">Value</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="vertical-align: middle;"><pre class="variables highlight"><code class="scss"></code></pre></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><pre class="variables highlight"><code class="scss"></code></pre></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><pre class="variables highlight"><code class="scss"></code></pre></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><pre class="variables highlight"><code class="scss"></code></pre></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+</article>
+
+            </div><!-- /Col -->
+            <!-- =====================
+    Contents Nav
+    ===================== -->
+<div class="col-2 pr-0">
+    <aside class="smallnav h-100 d-none d-tab-block">
+        <div class="smallnav-cont p-sticky">
+            <ul class="table-of-contents b-b-light">
+                                <a href="#usage">
+                    <li class="contents-item" data-contentitem="usage">Usage</li>
+                </a>
+                                <a href="#position">
+                    <li class="contents-item" data-contentitem="position">Position</li>
+                </a>
+                                <a href="#icon">
+                    <li class="contents-item" data-contentitem="icon">Icon</li>
+                </a>
+                                <a href="#javascript">
+                    <li class="contents-item" data-contentitem="javascript">Javascript</li>
+                </a>
+                                <a href="#variables">
+                    <li class="contents-item" data-contentitem="variables">Variables</li>
+                </a>
+                            </ul>
+            <ul class="community">
+                <li class="d-flex align-items-center">
+                    <img class="icon" src="../../assets/icons/edit.svg" alt="Edit icon">
+                    <a href="https://github.com/ainsleyclark/mesh/tree/master/documentation/documentation/toast.md"
+                        target="_blank" class="hover ml-1">Edit this page</a>
+                </li>
+                <li class="d-flex align-items-center">
+                    <img class="icon" src="../../assets/icons/danger.svg" alt="Warning icon">
+                    <a href="https://github.com/ainsleyclark/mesh/issues" class="hover ml-1">Report a problem</a>
+                </li>
+                <li class="d-flex align-items-center">
+                    <img class="icon" src="../../assets/icons/chat-grey.svg" alt="Community icon">
+                    <a href="https://discord.gg/geBW7CN" target="_blank" class="hover ml-1">Ask the community</a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+</div><!-- /Col -->            <!-- =====================
+    Footer
+    ===================== -->
+<div class="col-12 footer-col">
+    <footer class="primary">
+        <div class="d-flex align-items-center justify-content-center flex-wrap h-100">
+            <span class="mb-1 my-desk-0 mx-3">Version 1.0.0</span>
+            <div class="icon-cont mb-1 my-desk-0 mx-3 d-inline-flex align-items-center">
+                <img class="footer-icon" src="../../assets/icons/chat.svg" alt="Github logo">
+                <a class="hover" href="https://discordapp.com/channels/569873903237857300/569873903237857304" target="_blank">Community</a>
+            </div>
+            <span class="mx-3 t-center">© 2014-2019 mesh, All rights reserved.</span>
+        </div>
+    </footer>
+</div><!-- /Col -->
+        </div><!-- /Row -->
+    </div><!-- /Container -->
+</section>
+
+        </main>
+        <script src="../../js/vendor/highlight/highlight.pack.js"></script>
+        <script src="../../js/app.js"></script>
+        <!-- =====================
+    Page JS (Place in <script></script> tags)
+    ===================== -->
+
+    </body>
+
+<!-- Mirrored from 127.0.0.1:8000/documentation/components/toast by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Jul 2023 10:45:43 GMT -->
+</html>

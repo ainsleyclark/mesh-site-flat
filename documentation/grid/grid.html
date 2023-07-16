@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from 127.0.0.1:8000/documentation/grid/grid by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Jul 2023 10:45:34 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Grid | meshCSS</title>
+    <meta name="description" content="See how powerful our mobile-first flexbox grid is. With five breakpoints to choose from, sculpting elements to be responsive is a breeze.">
+    <link rel="canonical" href="https://www.meshcss.com/" />
+    <meta name="csrf" content="b51fKECi9twQ3j8eTInkU6xBzvJM4klQSX1wSLqw" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Open Graph -->
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Grid">
+    <meta property="og:description" content="See how powerful our mobile-first flexbox grid is. With five breakpoints to choose from, sculpting elements to be responsive is a breeze.">
+    <meta property="og:url" content="https://www.meshcss.com/">
+    <meta property="og:site_name" content="mesh>">
+    <meta property="og:image" content="https://www.meshcss.com/">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:description" content="See how powerful our mobile-first flexbox grid is. With five breakpoints to choose from, sculpting elements to be responsive is a breeze.">
+    <meta name="twitter:title" content="Grid">
+    <meta name="twitter:image" content="https://www.meshcss.com/">
+    <!-- CSS -->
+    
+    <!-- //! Consider using one style sheet here for font awesome -->
+    
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;display=swap" onload="this.rel='stylesheet'" as="style">
+    <link rel="preload" href="../../css/vendor/fontawesome/css/all.min.css" onload="this.rel='stylesheet'" as="style">
+
+    <link rel="prefetch" href="../../css/mesh.css" onload="this.rel='stylesheet'" as="style">
+    
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;display=swap"></noscript>
+    <link rel="stylesheet" type="text/css" href="../../css/app.css"> 
+    <noscript><link rel="stylesheet" href="../../css/vendor/fontawesome/css/all.min.css"></noscript>
+    <noscript><link rel="stylesheet" href="../../css/mesh.css"></noscript>
+    <noscript><link rel="stylesheet" href="../../css/app.css"></noscript>
+    <!-- =====================
+    Page CSS (Place in <style></style> tags)
+    ===================== -->
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../assets/favicon/site.html">
+    <link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ff2451">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140877948-1"></script>
+    <script>
+    //! UNCOMMENT FOR GTAG
+    // window.dataLayer = window.dataLayer || [];
+    // function gtag(){dataLayer.push(arguments);}
+    // gtag('js', new Date());
+    // gtag('config', 'UA-140877948-1');
+    </script>
+</head>
+    <body>
+        <!--[if lte IE 9]>
+            <div class="outdated-browser">
+                <h2>You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</h2>
+            </div>
+        <![endif]-->
+        <!-- =====================
+    Header
+    ===================== -->
+
+<header class="primary d-flex align-items-center ">
+    <div class="container-fullwidth px-tab-4">
+        <div class="row">
+            <div class="col-6">
+                <a class="d-flex align-items-center logo-cont" href="../../index.html">
+                    <div class="logo-cont d-flex align-items-center">
+                        <img class="logo" src="../../assets/svg/meshlogo.svg" alt="mesh Logo">
+                    </div>
+                    <div class="text-cont d-none d-tab-block">
+                        <h3>meshCSS</h3>
+                    </div>
+                </a>
+            </div>
+            <!-- //! d none here for mobile -->
+            <div class="col-6 align-items-center justify-content-end d-none d-tab-flex">        
+                <nav class="primary">
+                    <ul class="d-flex align-items-center my-0 t-uppercase">
+                        <a class="hover" href="../getting-started/introduction.html"><li class="mx-3">Documentation</li></a>
+                        <a class="hover" href="https://github.com/ainsleyclark/mesh" target="_blank"><li class="mx-3">Github</li></a>
+                        <a class="ml-3" href="../thanks.html">
+                            <button class="btn btn-rounded btn-outline btn-primary btn-icon download">Download
+                            <svg class="ml-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 471.2 471.2" style="enable-background:new 0 0 471.2 471.2;" xml:space="preserve">
+                                <g>
+                                    <path d="M457.7,230.15c-7.5,0-13.5,6-13.5,13.5v122.8c0,33.4-27.2,60.5-60.5,60.5H87.5c-33.4,0-60.5-27.2-60.5-60.5v-124.8    c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5v124.8c0,48.3,39.3,87.5,87.5,87.5h296.2c48.3,0,87.5-39.3,87.5-87.5v-122.8    C471.2,236.25,465.2,230.15,457.7,230.15z" data-original="#000000" class="active-path" data-old_color="#ffffff" fill="#ffffff"/>
+                                    <path d="M226.1,346.75c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4l85.8-85.8c5.3-5.3,5.3-13.8,0-19.1c-5.3-5.3-13.8-5.3-19.1,0l-62.7,62.8    V30.75c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5v273.9l-62.8-62.8c-5.3-5.3-13.8-5.3-19.1,0c-5.3,5.3-5.3,13.8,0,19.1    L226.1,346.75z" data-original="#000000" class="active-path" data-old_color="#ffffff" fill="#ffffff"/>
+                                </g>
+                            </svg>
+                            </button>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div> 
+</header>        <main class="page-grid">
+            <div class="header-spacer"></div>
+<!-- =====================
+    Side Navigation
+    ===================== -->
+<aside class="sidenav">
+    <h3>Documentation</h3>
+    <ul class="main-list color-black">
+        <!-- Getting Started -->
+        <li class="my-4">
+            <div class="nav-header b-b-light pb-2">Getting Started</div>
+            <ul class="sub-list mt-1">
+                <a class=""
+                    href="../getting-started/introduction.html">
+                    <li>Introduction</li>
+                </a>
+                <a class=""
+                    href="../getting-started/installation.html">
+                    <li>Installation</li>
+                </a>
+                <a class="" href="../../builder.html">
+                    <li>meshBuilder</li>
+                </a>
+                <a class=""
+                    href="../getting-started/javascript.html">
+                    <li>Javascript</li>
+                </a>
+                <a class=""
+                    href="../getting-started/notation.html">
+                    <li>Notation</li>
+                </a>
+            </ul>
+        </li>
+        <!-- Grid -->
+        <li class="my-4">
+            <div class="nav-header b-b-light pb-2">Grid</div>
+            <ul class="sub-list mt-1">
+                <a class="active" href="grid.html">
+                    <li>Grid</li>
+                </a>
+                <a class="" href="flex.html">
+                    <li>Flex</li>
+                </a>
+                <a class="" href="order.html">
+                    <li>Order</li>
+                </a>
+                <a class="" href="display.html">
+                    <li>Display</li>
+                </a>
+            </ul>
+        </li>
+        <!-- Utility -->
+        <li class="my-4">
+            <div class="nav-header b-b-light pb-2">Utility</div>
+            <ul class="sub-list mt-1">
+                <a class="" href="../utility/borders.html">
+                    <li>Borders</li>
+                </a>
+                <a class="" href="../utility/colors.html">
+                    <li>Colors</li>
+                </a>
+                <a class="" href="../utility/float.html">
+                    <li>Float</li>
+                </a>
+                <a class="" href="../utility/media.html">
+                    <li>Media</li>
+                </a>
+                <a class="" href="../utility/position.html">
+                    <li>Position</li>
+                </a>
+                <a class="" href="../utility/sizing.html">
+                    <li>Sizing</li>
+                </a>
+                <a class="" href="../utility/spacers.html">
+                    <li>Spacers</li>
+                </a>
+                <a class="" href="../utility/spacing.html">
+                    <li>Spacing</li>
+                </a>
+                <a class="" href="../utility/text.html">
+                    <li>Text</li>
+                </a>
+                <a class="" href="../utility/visibility.html">
+                    <li>Visibility</li>
+                </a>
+            </ul>
+        </li>
+        <!-- Components -->
+        <li class="my-4">
+            <div class="nav-header b-b-light pb-2">Components</div>
+            <ul class="sub-list mt-1">
+                <a class="" href="../components/alert.html">
+                    <li>Alert</li>
+                </a>
+                <a class="" href="../components/badges.html">
+                    <li>Badges</li>
+                </a>
+                <a class=""
+                    href="../components/breadcrumb.html">
+                    <li>Breadcrumbs</li>
+                </a>
+                <a class="" href="../components/button.html">
+                    <li>Button</li>
+                </a>
+                <a class="" href="../components/card.html">
+                    <li>Card</li>
+                </a>
+                <a class="" href="../components/collapse.html">
+                    <li>Collapse</li>
+                </a>
+                <a class="" href="../components/epic.html">
+                    <li>Epic</li>
+                </a>
+                <a class="" href="../components/form.html">
+                    <li>Form</li>
+                </a>
+                <a class="" href="../components/list.html">
+                    <li>List</li>
+                </a>
+                <a class="" href="../components/modal.html">
+                    <li>Modal</li>
+                </a>
+                <a class="" href="../components/nav.html">
+                    <li>Nav</li>
+                </a>
+                <a class="" href="../components/navbar.html">
+                    <li>Navbar</li>
+                </a>
+                <a class=""
+                    href="../components/pagination.html">
+                    <li>Pagination</li>
+                </a>
+                <a class="" href="../components/table.html">
+                    <li>Table</li>
+                </a>
+                <a class="" href="../components/tabs.html">
+                    <li>Tabs</li>
+                </a>
+                <a class="" href="../components/toast.html">
+                    <li>Toasts</li>
+                </a>
+                <a class="" href="../components/tooltip.html">
+                    <li>Tooltip</li>
+                </a>
+            </ul>
+        </li>
+    </ul>
+</aside>
+<section class="content button-page">
+    <div class="container-fullwidth">
+        <div class="row justify-content-center mt-4 mt-desk-5">
+            <div class="col-12 col-tab-9 col-desk-8 mr-desk-2 px-desk-4">
+                <h1 class="mb-2 mt-0">Grid</h1>
+                <div class="lead">See how powerful our mobile-first flexbox grid is. With five breakpoints to choose from, sculpting elements to be responsive is a breeze.</div>
+                <!-- =====================
+    Docs Section - Main HTML
+    ===================== -->
+
+<!-- How it works -->
+<article class="section-scroll" id="howItWorks">
+    <h2 class="b-b-light hash">How it works</h2>
+    <p class="secondary-lead">mesh uses conventional containers, rows and columns to lay out and align content. It's
+        built with flexbox and is fully responsive. Here's an example:</p>
+    <pre
+        class="highlight"><code class="html">&lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-12 col-tab-6 col-desk-4 col-hd-3"&gt;
+            I'm a column, I take up 12 columns at default width, 6 at tablet, 4 at desktop and 3 in hd screens
+        &lt;/div&gt;
+        &lt;div class="col-12 col-tab-6 col-desk-4 col-hd-3"&gt;
+            I'm a column, I take up 12 columns at default width, 6 at tablet, 4 at desktop and 3 in hd screens
+        &lt;/div&gt;
+        &lt;div class="col-12 col-tab-6 col-desk-4 col-hd-3"&gt;
+            I'm a column, I take up 12 columns at default width, 6 at tablet, 4 at desktop and 3 in hd screens
+        &lt;div class="col-12 col-tab-6 col-desk-4 col-hd-3"&gt;
+            I'm a column, I take up 12 columns at default width, 6 at tablet, 4 at desktop and 3 in hd screens
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code><img class="copy-to-clipboard"src="../../assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="../../assets/icons/checked.svg" alt="Success icon"></pre>
+</article>
+
+<!-- Grid options -->
+<article class="section-scroll" id="gridOptions">
+    <h2 class="b-b-light hash">Grid options</h2>
+    <p></p>
+</article>
+
+<!-- Containers -->
+<article class="section-scroll" id="containers">
+    <h2 class="b-b-light hash">Containers</h2>
+    <p class="secondary-lead">A container is the wrapper for a row (more on that later) and defines the width of your
+        content. It can be at fixed size or full width, and will gracefully become smaller as screen size gets smaller.
+    </p>
+    <div class="text-cont">
+        <h3>Container options:</h3>
+        <ul class="list-line">
+            <li>A container is at fixed size by default, by using the <code class="inline">container</code> tag. With
+                a maximum width set at each side, it will gradually get smaller as the viewport does.</li>
+            <li>Or a container can be full width, which will take up 100% of the screen and have slight padding either
+                side. This is acheived by adding the <code class="inline">container-fullwidth</code> class to a div or
+                semantic element.</li>
+        </ul>
+    </div>
+    <button class="btn btn-secondary" id="btnBrowser">Switch to container-fullwidth</button>
+    <div class="browser-cont">
+        <svg id="browser" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3207.3 1836.6" style="max-width: 100%; min-width: 100%;">
+    <defs>
+      <style>
+        .cls-1 {
+          fill: #c6c6c6;
+        }
+  
+        .cls-2 {
+          fill: #ededed;
+        }
+  
+        .cls-3 {
+          fill: #6cb52d;
+        }
+  
+        .cls-4 {
+          fill: #fecb3d;
+        }
+  
+        .cls-5 {
+          fill: #e83c43;
+        }
+  
+        .cls-6 {
+          fill: #919191;
+        }
+  
+        .cls-7 {
+          fill: #fff;
+        }
+  
+        .cls-8 {
+          fill: #8c8c8c;
+          opacity: 0.25;
+        }
+      </style>
+    </defs>
+    <title>browserwindow</title>
+    <g id="browserheader">
+      <rect class="cls-1" width="3207.3" height="183.21"/>
+      <path class="cls-2" d="M1063.1,115.1l-14.6-67A21,21,0,0,0,1028,31.6H330.7a21,21,0,0,0-20.5,16.5l-14.6,67a20.6,20.6,0,0,1-20.1,16.2H0V292.4H3207.3V131.3H1083.2A20.6,20.6,0,0,1,1063.1,115.1Z" transform="translate(0 0)"/>
+      <circle class="cls-3" cx="233.6" cy="64.8" r="25.3" transform="translate(129.3 283.6) rotate(-80)"/>
+      <circle class="cls-4" cx="152.7" cy="64.8" r="25.3"/>
+      <circle class="cls-5" cx="71.7" cy="64.8" r="25.3"/>
+      <path class="cls-6" d="M259.3,188.5a4,4,0,0,0-4.1,3.6l-.7,3.7a25.6,25.6,0,0,0-11.6-6.9,23.2,23.2,0,0,0-9.8-.7A25.4,25.4,0,0,0,211.3,208a20.6,20.6,0,0,0-.6,7,25.6,25.6,0,0,0,20,23.4,20.6,20.6,0,0,0,7,.6,25.5,25.5,0,0,0,23.6-21,3.8,3.8,0,0,0-3.1-4.5,3.4,3.4,0,0,0-2,.1h0a3.9,3.9,0,0,0-2.7,3,17.7,17.7,0,1,1-3.9-14.7l-4.3,1.4h-.1a4,4,0,1,0,2.5,7.5l13-4.2,2.2-13.6a4,4,0,0,0-3.2-4.5Z" transform="translate(0 0)"/>
+      <g>
+        <rect class="cls-6" x="985.8" y="76.7" width="43.2" height="9.08" rx="4.5" ry="4.5" transform="translate(237.6 736.1) rotate(-45)"/>
+        <rect class="cls-6" x="1002.8" y="59.7" width="9.1" height="43.15" rx="4.5" ry="4.5" transform="translate(237.6 736.1) rotate(-45)"/>
+      </g>
+      <g>
+        <rect class="cls-6" x="1088.1" y="75.2" width="57.6" height="12.13" rx="6" ry="6"/>
+        <rect class="cls-6" x="1110.9" y="52.5" width="12.1" height="57.63" rx="6" ry="6"/>
+      </g>
+      <g>
+        <path class="cls-6" d="M54.2,215.7l22.1,14.7c1.3.8,3.1,0,3.1-1.3V198.3c0-1.3-1.8-2.1-3.1-1.3L54.2,211.7a2.2,2.2,0,0,0-1.1,2.9A2,2,0,0,0,54.2,215.7Z" transform="translate(0 0)"/>
+        <rect class="cls-6" x="71" y="207.4" width="28.7" height="12.6"/>
+      </g>
+      <g>
+        <path class="cls-6" d="M167.7,215.7l-22.2,14.7c-1.3.8-3.1,0-3.1-1.3V198.3c0-1.3,1.8-2.1,3.1-1.3l22.2,14.7a2.3,2.3,0,0,1,.9,3.1A2,2,0,0,1,167.7,215.7Z" transform="translate(0 0)"/>
+        <rect class="cls-6" x="122.2" y="207.4" width="28.7" height="12.6"/>
+      </g>
+      <g>
+        <path class="cls-6" d="M3163.5,27.2l-25.2,2.9a1.7,1.7,0,0,0-1.5,1.9,1.4,1.4,0,0,0,.5,1l23.3,23.3a1.7,1.7,0,0,0,2.5-.1,1.4,1.4,0,0,0,.5-.8l2.9-25.2a2.6,2.6,0,0,0-2.1-3Z" transform="translate(0 0)"/>
+        <rect class="cls-6" x="3132.2" y="41.6" width="26.8" height="13.07" transform="translate(887.3 2238.4) rotate(-45)"/>
+        <path class="cls-6" d="M3098.7,98l25.2-2.9a1.8,1.8,0,0,0,1.4-2.2,2.2,2.2,0,0,0-.5-.8l-23.3-23.2a1.6,1.6,0,0,0-2.4,0,1.3,1.3,0,0,0-.5.9L3095.7,95a2.6,2.6,0,0,0,2.1,3Z" transform="translate(0 0)"/>
+        <rect class="cls-6" x="3104.1" y="70.2" width="25.7" height="13.07" transform="translate(858.7 2226.5) rotate(-45)"/>
+      </g>
+      <rect class="cls-7" x="374.5" y="156.6" width="2722.3" height="108.37" rx="53.6" ry="53.6"/>
+      <path class="cls-6" d="M3033.4,240.2a7.1,7.1,0,0,1-4.2-1.4l-10.9-7.9-10.8,7.9a7.6,7.6,0,0,1-4.3,1.4,7.4,7.4,0,0,1-7.4-7.2,6.7,6.7,0,0,1,.4-2.4l4.2-12.7-10.9-7.9a7.2,7.2,0,0,1-1.6-10.2,7.3,7.3,0,0,1,5.9-3h13.4l4.2-12.7a7.1,7.1,0,0,1,9-4.8,7.2,7.2,0,0,1,4.8,4.8l4.2,12.7h13.4a7.3,7.3,0,0,1,4.3,13.2l-10.9,7.9,4.2,12.7a7.5,7.5,0,0,1-1,6.5A7.2,7.2,0,0,1,3033.4,240.2Zm-15.1-16,14.1,10.2a1.8,1.8,0,0,0,2.5-.4h.1a1.8,1.8,0,0,0,.2-1.6l-5.4-16.5,14.1-10.2a1.6,1.6,0,0,0,.6-2.1,1.7,1.7,0,0,0-1.7-1.2h-17.4l-5.3-16.5a1.8,1.8,0,0,0-1.8-1.3,1.6,1.6,0,0,0-1.7,1.3l-5.4,16.5h-17.4a1.7,1.7,0,0,0-1.7,1.2,1.9,1.9,0,0,0,.6,2.1l14.1,10.2-5.4,16.5a1.6,1.6,0,0,0,.3,1.6,1.9,1.9,0,0,0,2.5.6h.1Z" transform="translate(0 0)"/>
+      <circle class="cls-6" cx="3152.3" cy="184.3" r="8.7" transform="translate(2466.4 3266.5) rotate(-80.8)"/>
+      <circle class="cls-6" cx="3152.2" cy="212.4" r="8.7" transform="translate(2438.6 3290.1) rotate(-80.8)"/>
+      <circle class="cls-6" cx="3153.2" cy="240.6" r="8.7" transform="matrix(0.92, -0.38, 0.38, 0.92, 147.94, 1224.97)"/>
+      <rect class="cls-2" y="291" width="3207.3" height="1545.63"/>
+    </g>
+    <g id="fullwidth" class="d-none">
+      <rect class="cls-7" x="69.5" y="451" width="3088.6" height="1129.38" rx="31.2" ry="31.2"/>
+      <rect class="cls-8" x="170.8" y="553.5" width="316.9" height="316.88" rx="50.3" ry="50.3"/>
+      <rect class="cls-8" x="568.8" y="618.6" width="2317.6" height="40"/>
+      <rect class="cls-8" x="568.8" y="792.1" width="1925" height="40"/>
+      <rect class="cls-8" x="165.1" y="964.4" width="1695.7" height="40"/>
+      <rect class="cls-8" x="165.1" y="1151.7" width="1408.4" height="40"/>
+      <rect class="cls-8" x="165.1" y="1339" width="1695.7" height="40"/>
+    </g>
+    <g id="container">
+      <rect class="cls-7" x="493.8" y="451" width="2240" height="1129.38" rx="31.2" ry="31.2"/>
+      <rect class="cls-8" x="589.5" y="577.9" width="300.5" height="300" rx="50.3" ry="50.3"/>
+      <rect class="cls-8" x="947.8" y="614.7" width="1680.8" height="40"/>
+      <rect class="cls-8" x="947.8" y="784.1" width="1396.1" height="40"/>
+      <rect class="cls-8" x="589.5" y="966.6" width="1229.8" height="40"/>
+      <rect class="cls-8" x="589.5" y="1155.7" width="1021.4" height="40"/>
+      <rect class="cls-8" x="589.5" y="1344.7" width="1229.8" height="40"/>
+    </g>
+</svg>
+      </div>
+</article>
+
+<!-- Rows -->
+<article class="section-scroll" id="rows">
+    <h2 class="b-b-light hash">Rows</h2>
+    <p class="secondary-lead">
+        A <strong>row is the container for columns</strong>, it lives inside a container. It is 100% width of that
+        container and uses flexbox to align columns. Naturally it has no padding but has negative margins on the x axis
+        to counteract the gaps set on the columns.
+        <br>Add the <code class="inline">row</code> class to a <code class="inline">div</code> to enable this behaviour.
+    </p>
+    <div class="text-cont">
+        <h3>Row options:</h3>
+        <ul class="list-line">
+            <li>To get rid of the padding on each side of a column, add the <code class="inline">no-gaps</code> class to
+                a row. See below: </li>
+        </ul>
+    </div>
+    <button class="btn btn-secondary" id="btnNoGaps">Turn gaps off</button>
+    <div class="column-demo">
+        <div class="row c-white t-center">
+            <div class="col-1">
+                <div class="text w-100">1</div>
+            </div>
+            <div class="col-1">
+                <div class="text w-100">2</div>
+            </div>
+            <div class="col-1">
+                <div class="text w-100">3</div>
+            </div>
+            <div class="col-1">
+                <div class="text w-100">4</div>
+            </div>
+            <div class="col-1">
+                <div class="text w-100">5</div>
+            </div>
+            <div class="col-1">
+                <div class="text w-100">6</div>
+            </div>
+            <div class="col-1">
+                <div class="text w-100">7</div>
+            </div>
+            <div class="col-1">
+                <div class="text w-100">8</div>
+            </div>
+            <div class="col-1">
+                <div class="text w-100">9</div>
+            </div>
+            <div class="col-1">
+                <div class="text w-100">10</div>
+            </div>
+            <div class="col-1">
+                <div class="text w-100">11</div>
+            </div>
+            <div class="col-1">
+                <div class="text w-100">12</div>
+            </div>
+        </div>
+    </div>
+</article>
+
+<!-- Columns -->
+<article class="section-scroll" id="columns">
+    <h2 class="b-b-light hash">Columns</h2>
+    <p class="secondary-lead">
+        A column is where your content lives, <strong>which lives inside a row.</strong> There can be a maximum of 12
+        columns in a row, if there are more they will wrap to the next line. Of course you can overwrite this behaviour
+        by
+        using the <code class="inline">flex-nowrap</code> class.
+        <br>The column prefix is <code class="inline">col-{modifier}-{amount}</code> where the modifier is the class
+        name for a breakpoint (e.g. <code class="inline">mob</code> / <code class="inline">tab</code> / <code
+            class="inline">desk</code> / <code class="inline">hd</code>) and the amount can be from 1 to 12.
+    </p>
+    <div class="text-cont">
+        <h3>Notes:</h3>
+        <ul class="list-line">
+            <li>The default size of a column is defined with <code class="inline">col-{amount}</code>, for example <code
+                    class="inline">col-10</code> will take up 10 columns at all breakpoints.</li>
+            <li>The <code class="inline">col-auto</code> class will fill up all available space within the row, great if
+                you want a column to have a predefined width (in pixels or ems for example).</li>
+            <li>The default width of a column is 100%, meaning you can omit <code class="inline">col-12</code> if you
+                always want to take up 12 columns for mobile.</li>
+        </ul>
+    </div>
+
+    <!-- Simple Layout -->
+    <div class="example mt-5">
+        <div class="text-cont">
+            <h3>Simple layout:</h3>
+            <p>Here all columns will take up 4 spaces on HD screens, 6 on tablet, and because mesh is built mobile
+                first, they will be 100% width at mobile, even though we didn't specify. The first column will take up
+                12 columns on tablet. Go ahead and resize the screen to see the effect.</p>
+        </div>
+        <div class="column-demo c-white mb-3 t-center">
+            <div class="row">
+                <div class="col-tab-12 col-hd-4 mb-2 mb-hd-0">
+                    <div class="text px-3 br">
+                        col-tab-12 col-hd-4
+                    </div>
+                </div>
+                <div class="col-tab-6 col-hd-4 mb-2 mb-tab-0">
+                    <div class="text px-3 br">
+                        col-tab-6 col-hd-4
+                    </div>
+                </div>
+                <div class="col-tab-6 col-hd-4">
+                    <div class="text px-3 br">
+                        col-tab-6 col-hd-4
+                    </div>
+                </div>
+            </div>
+        </div>
+        <pre
+            class="highlight"><code class="html">&lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-tab-12 col-hd-4"&gt;
+        &lt;/div&gt;
+        &lt;div class="col-tab-6 col-hd-4"&gt;
+        &lt;/div&gt;
+        &lt;div class="col-tab-6 col-hd-4"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code><img class="copy-to-clipboard"src="../../assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="../../assets/icons/checked.svg" alt="Success icon"></pre>
+    </div>
+
+    <!-- Auto width -->
+    <div class="example mt-5">
+        <div class="text-cont">
+            <h3>Auto width columns</h3>
+            <p>With the <code class="inline">col-{breakpoint}-auto</code> class, the column will fill based on the
+                content that lives inside it.</p>
+        </div>
+        <div class="column-demo c-white mb-3 t-center">
+            <div class="row">
+                <div class="col-desk-3 mb-2 mb-hd-0">
+                    <div class="text px-3 br">
+                        col-desk-3
+                    </div>
+                </div>
+                <div class="col-auto mb-2 mb-hd-0">
+                    <div class="text px-3 br">
+                        I fill based on what's inside me - col-auto
+                    </div>
+                </div>
+                <div class="col-desk-3">
+                    <div class="text px-3 br">
+                        col-desk-3
+                    </div>
+                </div>
+            </div>
+        </div>
+        <pre
+            class="highlight"><code class="html">&lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-desk-3"&gt;
+        &lt;/div&gt;
+        &lt;div class="col-auto"&gt; 
+        I fill based on what's inside me
+        &lt;/div&gt;
+        &lt;div class="col-desk-3"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code><img class="copy-to-clipboard"src="../../assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="../../assets/icons/checked.svg" alt="Success icon"></pre>
+    </div>
+
+    <!-- Wrapping -->
+    <div class="example mt-5">
+        <div class="text-cont">
+            <h3>Wrapping</h3>
+            <p>
+                If you require a column to wrap to the next line at various viewports, you can use the <code
+                    class="inline">w-100</code> class which will effectively create a new line in your grid without
+                using a new <code class="inline">row</code>. Sometimes you may not want this at desktop for example, if
+                so, use our display classes - <code class="inline">d-desk-none</code>.
+                <br>You can even add margin to the <code class="inline">w-100</code> like below:
+            </p>
+        </div>
+        <div class="column-demo c-white mb-3 t-center">
+            <div class="row">
+                <div class="col-6 col-tab-3 mb-1">
+                    <div class="text px-3 br">
+                        col-6 col-tab-3
+                    </div>
+                </div>
+                <div class="col-6 col-tab-3">
+                    <div class="text px-3 br">
+                        col-6 col-tab-3
+                    </div>
+                </div>
+                <div class="col-6 col-tab-3">
+                    <div class="text px-3 br">
+                        col-6 col-tab-3
+                    </div>
+                </div>
+                <div class="w-100 mb-1"></div>
+                <div class="col-6 col-tab-3">
+                    <div class="text px-3 br">
+                        col-6 col-tab-3
+                    </div>
+                </div>
+                <div class="col-6 col-tab-3 col-desk-9">
+                    <div class="text px-3 br">
+                        col-6 col-tab-3 col-desk-9
+                    </div>
+                </div>
+            </div>
+        </div>
+        <pre
+            class="highlight"><code class="html">&lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-6 col-tab-3"&gt;
+        &lt;/div&gt;
+        &lt;div class="col-6 col-tab-3"&gt;
+        &lt;/div&gt;
+        &lt;div class="col-6 col-tab-3"&gt;
+        &lt;/div&gt;
+        &lt;div class="w-100 mb-1"&gt;&lt;/div&gt;
+        &lt;div class="col-6 col-tab-3"&gt;
+        &lt;/div&gt;
+        &lt;div class="col-6 col-tab-3 col-desk-9"&gt;
+        &lt;/div&gt
+    &lt;/div&gt;
+&lt;/div&gt;</code><img class="copy-to-clipboard"src="../../assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="../../assets/icons/checked.svg" alt="Success icon"></pre>
+    </div>
+
+    <!-- Horizontal alignment -->
+    <div class="example mt-5">
+        <div class="text-cont">
+            <h3>Horizontal alignment</h3>
+            <p>CSS alignment can be a nightmare. With mesh, as it's built with flexbox, alignment is easy. Just add one
+                of our flex classes to the row or parent that the content lives in.</p>
+            <ul class="list-line">
+                <li>To align content centrally add <code class="inline">justify-content-center</code> to the row/parent.
+                </li>
+                <li>To align content at the start of the row/parent add <code
+                        class="inline">justify-content-start</code>.</li>
+                <li>To align content at the end of the row/parent add <code class="inline">justify-content-end</code>.
+                </li>
+            </ul>
+        </div>
+        <div class="column-demo c-white mb-3">
+            <div class="row justify-content-center bg-light mx-0 br">
+                <div class="col-5 px-0 t-center">
+                    <div class="text px-3 br">
+                        justify-content-center
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-start bg-light mx-0 my-2 br">
+                <div class="col-5 px-0 t-center">
+                    <div class="text px-3 br">
+                        justify-content-start
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-end bg-light mx-0 my-2 br">
+                <div class="col-5 px-0 t-center">
+                    <div class="text px-3 br">
+                        justify-content-end
+                    </div>
+                </div>
+            </div>
+        </div>
+        <pre
+            class="highlight"><code class="html">&lt;div class="container"&gt;
+    &lt;div class="row justify-content-center"&gt;
+        &lt;div class="col-5"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row justify-content-start"&gt;
+        &lt;div class="col-5"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row justify-content-end"&gt;
+        &lt;div class="col-5"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code><img class="copy-to-clipboard"src="../../assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="../../assets/icons/checked.svg" alt="Success icon"></pre>
+    </div>
+
+    <!-- Vertical alignment -->
+    <div class="example mt-5">
+        <div class="text-cont">
+            <h3>Vertical alignment</h3>
+            <p>To align content vertically within the container you will need to take advantage of our flex class <code
+                    class="inline">align-items-*</code>.</p>
+            <ul class="list-line">
+                <li>To align content centrally add <code class="inline">align-items-center</code> to the row/container.
+                </li>
+                <li>To align content at the start of the row/container add <code
+                        class="inline">align-items-start</code>.</li>
+                <li>To align content at the end of the row/container add <code class="inline">align-items-end</code>.
+                </li>
+            </ul>
+        </div>
+        <div class="column-demo c-white mb-3">
+            <div class="row align-items-center bg-light height-100 mx-0 br">
+                <div class="col-12 px-0 t-center">
+                    <div class="text px-3 br">
+                        align-items-center
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-start bg-light height-100 mx-0 my-2 br">
+                <div class="col-12 px-0 t-center">
+                    <div class="text px-3 br">
+                        align-items-start
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-end bg-light height-100 mx-0 my-2 br">
+                <div class="col-12 px-0 t-center">
+                    <div class="text px-3 br h-100">
+                        align-items-end
+                    </div>
+                </div>
+            </div>
+        </div>
+        <pre
+            class="highlight"><code class="html">&lt;div class="container"&gt;
+    &lt;div class="row align-items--center"&gt;
+        &lt;div class="col-5"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row align-items-start"&gt;
+        &lt;div class="col-5"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row align-items-end"&gt;
+        &lt;div class="col-5"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code><img class="copy-to-clipboard"src="../../assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="../../assets/icons/checked.svg" alt="Success icon"></pre>
+    </div>
+
+</article>
+
+<!-- Offset -->
+<article class="section-scroll" id="offset">
+    <h2 class="b-b-light hash">Offset</h2>
+    <p class="secondary-lead">
+        Offsetting is a way to push columns along in the row. Columns can be offset in a responsive manner, meaning you
+        can offset columns dependent on viewport.
+        <br>To offset use <code class="inline">offset-{breakpoint}-{amount}</code> where the modifier is the class name
+        for a breakpoint (e.g. <code class="inline">mob</code> / <code class="inline">tab</code> / <code
+            class="inline">desk</code> / <code class="inline">hd</code>) and the amount can be from 1 to 12.
+    </p>
+    <div class="column-demo c-white mb-3 t-center">
+        <div class="row">
+            <div class="col-6 offset-6 mb-2">
+                <div class="text px-3 br">
+                    col-6 offset-6
+                </div>
+            </div>
+            <div class="col-5 offset-desk-1 mb-2 mb-hd-0">
+                <div class="text px-3 br mb-2">
+                    col-5 offset-desk-1
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="text px-3 br">
+                    col-4
+                </div>
+            </div>
+            <div class="col-6 offset-6 offset-desk-0">
+                <div class="text px-3 br">
+                    col-6 offset-6 offset-desk-0
+                </div>
+            </div>
+        </div>
+    </div>
+    <pre
+        class="highlight"><code class="html">&lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-6 offset-6"&gt;
+        &lt;/div&gt;
+        &lt;div class="col-5 offset-desk-1"&gt;
+        &lt;/div&gt;
+        &lt;div class="col-4"&gt;
+        &lt;/div&gt;
+        &lt;div class="col-6 offset-6 offset-desk-0"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code><img class="copy-to-clipboard"src="../../assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="../../assets/icons/checked.svg" alt="Success icon"></pre>
+</article>
+
+<!-- Variables -->
+<article class="section-scroll" id="variables">
+    <h2 class="b-b-light hash">Variables</h2>
+    <p class="secondary-lead">
+        You can manipulate the grid columns, breakpoints and gap widths using the variables below.
+    </p>
+    <div class="table-scroll">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Variable</th>
+                    <th class="w-20">Value</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="vertical-align: middle;">
+                        <pre class="variables highlight"><code class="scss">$grid-columns: 12 !default;</code></pre>
+                    </td>
+                    <td>Number</td>
+                    <td>The amount of columns in the grid.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre class="variables highlight"><code class="scss">$gap-width: 15px !default;</code></pre>
+                    </td>
+                    <td>Pixels</td>
+                    <td>How large the space between the columns are.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre class="variables highlight"><code class="scss">$grid-breakpoint-mob: 568 !default;
+$grid-breakpoint-tab: 768 !default;
+$grid-breakpoint-desk: 1024 !default;
+$grid-breakpoint-hd: 1408 !default;</code></pre>
+                    </td>
+                    <td>Pixels (no px)</td>
+                    <td>Defines the width of the breakpoints using max-width, you can add as many as you wish.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre class="variables highlight"><code class="scss">$grid-properties: (
+        '': 0,
+        '-mob': $grid-breakpoint-mob,
+        '-tab': $grid-breakpoint-tab,
+        '-desk': $grid-breakpoint-desk,
+        '-hd': $grid-breakpoint-hd
+    ) !default;</code></pre>
+                    </td>
+                    <td>String & Variable</td>
+                    <td>Defines the grid breakpoint class values, add and delete, ensure the variable corrosponds to the
+                        breakpoint variable above.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</article>
+
+            </div><!-- /Col -->
+            <!-- =====================
+    Contents Nav
+    ===================== -->
+<div class="col-2 pr-0">
+    <aside class="smallnav h-100 d-none d-tab-block">
+        <div class="smallnav-cont p-sticky">
+            <ul class="table-of-contents b-b-light">
+                                <a href="#howItWorks">
+                    <li class="contents-item" data-contentitem="howItWorks">How it works</li>
+                </a>
+                                <a href="#gridOptions">
+                    <li class="contents-item" data-contentitem="gridOptions">Grid options</li>
+                </a>
+                                <a href="#containers">
+                    <li class="contents-item" data-contentitem="containers">Containers</li>
+                </a>
+                                <a href="#rows">
+                    <li class="contents-item" data-contentitem="rows">Rows</li>
+                </a>
+                                <a href="#columns">
+                    <li class="contents-item" data-contentitem="columns">Columns</li>
+                </a>
+                                <a href="#offset">
+                    <li class="contents-item" data-contentitem="offset">Offset</li>
+                </a>
+                                <a href="#variables">
+                    <li class="contents-item" data-contentitem="variables">Variables</li>
+                </a>
+                            </ul>
+            <ul class="community">
+                <li class="d-flex align-items-center">
+                    <img class="icon" src="../../assets/icons/edit.svg" alt="Edit icon">
+                    <a href="https://github.com/ainsleyclark/mesh/tree/master/documentation/documentation/grid.md"
+                        target="_blank" class="hover ml-1">Edit this page</a>
+                </li>
+                <li class="d-flex align-items-center">
+                    <img class="icon" src="../../assets/icons/danger.svg" alt="Warning icon">
+                    <a href="https://github.com/ainsleyclark/mesh/issues" class="hover ml-1">Report a problem</a>
+                </li>
+                <li class="d-flex align-items-center">
+                    <img class="icon" src="../../assets/icons/chat-grey.svg" alt="Community icon">
+                    <a href="https://discord.gg/geBW7CN" target="_blank" class="hover ml-1">Ask the community</a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+</div><!-- /Col -->            <!-- =====================
+    Footer
+    ===================== -->
+<div class="col-12 footer-col">
+    <footer class="primary">
+        <div class="d-flex align-items-center justify-content-center flex-wrap h-100">
+            <span class="mb-1 my-desk-0 mx-3">Version 1.0.0</span>
+            <div class="icon-cont mb-1 my-desk-0 mx-3 d-inline-flex align-items-center">
+                <img class="footer-icon" src="../../assets/icons/chat.svg" alt="Github logo">
+                <a class="hover" href="https://discordapp.com/channels/569873903237857300/569873903237857304" target="_blank">Community</a>
+            </div>
+            <span class="mx-3 t-center">© 2014-2019 mesh, All rights reserved.</span>
+        </div>
+    </footer>
+</div><!-- /Col -->
+        </div><!-- /Row -->
+    </div><!-- /Container -->
+</section>
+
+        </main>
+        <script src="../../js/vendor/highlight/highlight.pack.js"></script>
+        <script src="../../js/app.js"></script>
+        <!-- =====================
+    Page JS (Place in <script></script> tags)
+    ===================== -->
+
+    </body>
+
+<!-- Mirrored from 127.0.0.1:8000/documentation/grid/grid by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Jul 2023 10:45:36 GMT -->
+</html>

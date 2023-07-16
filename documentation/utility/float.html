@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from 127.0.0.1:8000/documentation/utility/float by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Jul 2023 10:45:36 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Float | meshCSS</title>
+    <meta name="description" content="Toggle between floats at different breakpoints using our float utility classes.">
+    <link rel="canonical" href="https://www.meshcss.com/" />
+    <meta name="csrf" content="b51fKECi9twQ3j8eTInkU6xBzvJM4klQSX1wSLqw" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Open Graph -->
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Float">
+    <meta property="og:description" content="Toggle between floats at different breakpoints using our float utility classes.">
+    <meta property="og:url" content="https://www.meshcss.com/">
+    <meta property="og:site_name" content="mesh>">
+    <meta property="og:image" content="https://www.meshcss.com/">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:description" content="Toggle between floats at different breakpoints using our float utility classes.">
+    <meta name="twitter:title" content="Float">
+    <meta name="twitter:image" content="https://www.meshcss.com/">
+    <!-- CSS -->
+    
+    <!-- //! Consider using one style sheet here for font awesome -->
+    
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;display=swap" onload="this.rel='stylesheet'" as="style">
+    <link rel="preload" href="../../css/vendor/fontawesome/css/all.min.css" onload="this.rel='stylesheet'" as="style">
+
+    <link rel="prefetch" href="../../css/mesh.css" onload="this.rel='stylesheet'" as="style">
+    
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;display=swap"></noscript>
+    <link rel="stylesheet" type="text/css" href="../../css/app.css"> 
+    <noscript><link rel="stylesheet" href="../../css/vendor/fontawesome/css/all.min.css"></noscript>
+    <noscript><link rel="stylesheet" href="../../css/mesh.css"></noscript>
+    <noscript><link rel="stylesheet" href="../../css/app.css"></noscript>
+    <!-- =====================
+    Page CSS (Place in <style></style> tags)
+    ===================== -->
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../assets/favicon/site.html">
+    <link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ff2451">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140877948-1"></script>
+    <script>
+    //! UNCOMMENT FOR GTAG
+    // window.dataLayer = window.dataLayer || [];
+    // function gtag(){dataLayer.push(arguments);}
+    // gtag('js', new Date());
+    // gtag('config', 'UA-140877948-1');
+    </script>
+</head>
+    <body>
+        <!--[if lte IE 9]>
+            <div class="outdated-browser">
+                <h2>You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</h2>
+            </div>
+        <![endif]-->
+        <!-- =====================
+    Header
+    ===================== -->
+
+<header class="primary d-flex align-items-center ">
+    <div class="container-fullwidth px-tab-4">
+        <div class="row">
+            <div class="col-6">
+                <a class="d-flex align-items-center logo-cont" href="../../index.html">
+                    <div class="logo-cont d-flex align-items-center">
+                        <img class="logo" src="../../assets/svg/meshlogo.svg" alt="mesh Logo">
+                    </div>
+                    <div class="text-cont d-none d-tab-block">
+                        <h3>meshCSS</h3>
+                    </div>
+                </a>
+            </div>
+            <!-- //! d none here for mobile -->
+            <div class="col-6 align-items-center justify-content-end d-none d-tab-flex">        
+                <nav class="primary">
+                    <ul class="d-flex align-items-center my-0 t-uppercase">
+                        <a class="hover" href="../getting-started/introduction.html"><li class="mx-3">Documentation</li></a>
+                        <a class="hover" href="https://github.com/ainsleyclark/mesh" target="_blank"><li class="mx-3">Github</li></a>
+                        <a class="ml-3" href="../thanks.html">
+                            <button class="btn btn-rounded btn-outline btn-primary btn-icon download">Download
+                            <svg class="ml-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 471.2 471.2" style="enable-background:new 0 0 471.2 471.2;" xml:space="preserve">
+                                <g>
+                                    <path d="M457.7,230.15c-7.5,0-13.5,6-13.5,13.5v122.8c0,33.4-27.2,60.5-60.5,60.5H87.5c-33.4,0-60.5-27.2-60.5-60.5v-124.8    c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5v124.8c0,48.3,39.3,87.5,87.5,87.5h296.2c48.3,0,87.5-39.3,87.5-87.5v-122.8    C471.2,236.25,465.2,230.15,457.7,230.15z" data-original="#000000" class="active-path" data-old_color="#ffffff" fill="#ffffff"/>
+                                    <path d="M226.1,346.75c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4l85.8-85.8c5.3-5.3,5.3-13.8,0-19.1c-5.3-5.3-13.8-5.3-19.1,0l-62.7,62.8    V30.75c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5v273.9l-62.8-62.8c-5.3-5.3-13.8-5.3-19.1,0c-5.3,5.3-5.3,13.8,0,19.1    L226.1,346.75z" data-original="#000000" class="active-path" data-old_color="#ffffff" fill="#ffffff"/>
+                                </g>
+                            </svg>
+                            </button>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div> 
+</header>        <main class="page-float">
+            <div class="header-spacer"></div>
+<!-- =====================
+    Side Navigation
+    ===================== -->
+<aside class="sidenav">
+    <h3>Documentation</h3>
+    <ul class="main-list color-black">
+        <!-- Getting Started -->
+        <li class="my-4">
+            <div class="nav-header b-b-light pb-2">Getting Started</div>
+            <ul class="sub-list mt-1">
+                <a class=""
+                    href="../getting-started/introduction.html">
+                    <li>Introduction</li>
+                </a>
+                <a class=""
+                    href="../getting-started/installation.html">
+                    <li>Installation</li>
+                </a>
+                <a class="" href="../../builder.html">
+                    <li>meshBuilder</li>
+                </a>
+                <a class=""
+                    href="../getting-started/javascript.html">
+                    <li>Javascript</li>
+                </a>
+                <a class=""
+                    href="../getting-started/notation.html">
+                    <li>Notation</li>
+                </a>
+            </ul>
+        </li>
+        <!-- Grid -->
+        <li class="my-4">
+            <div class="nav-header b-b-light pb-2">Grid</div>
+            <ul class="sub-list mt-1">
+                <a class="" href="../grid/grid.html">
+                    <li>Grid</li>
+                </a>
+                <a class="" href="../grid/flex.html">
+                    <li>Flex</li>
+                </a>
+                <a class="" href="../grid/order.html">
+                    <li>Order</li>
+                </a>
+                <a class="" href="../grid/display.html">
+                    <li>Display</li>
+                </a>
+            </ul>
+        </li>
+        <!-- Utility -->
+        <li class="my-4">
+            <div class="nav-header b-b-light pb-2">Utility</div>
+            <ul class="sub-list mt-1">
+                <a class="" href="borders.html">
+                    <li>Borders</li>
+                </a>
+                <a class="" href="colors.html">
+                    <li>Colors</li>
+                </a>
+                <a class="active" href="float.html">
+                    <li>Float</li>
+                </a>
+                <a class="" href="media.html">
+                    <li>Media</li>
+                </a>
+                <a class="" href="position.html">
+                    <li>Position</li>
+                </a>
+                <a class="" href="sizing.html">
+                    <li>Sizing</li>
+                </a>
+                <a class="" href="spacers.html">
+                    <li>Spacers</li>
+                </a>
+                <a class="" href="spacing.html">
+                    <li>Spacing</li>
+                </a>
+                <a class="" href="text.html">
+                    <li>Text</li>
+                </a>
+                <a class="" href="visibility.html">
+                    <li>Visibility</li>
+                </a>
+            </ul>
+        </li>
+        <!-- Components -->
+        <li class="my-4">
+            <div class="nav-header b-b-light pb-2">Components</div>
+            <ul class="sub-list mt-1">
+                <a class="" href="../components/alert.html">
+                    <li>Alert</li>
+                </a>
+                <a class="" href="../components/badges.html">
+                    <li>Badges</li>
+                </a>
+                <a class=""
+                    href="../components/breadcrumb.html">
+                    <li>Breadcrumbs</li>
+                </a>
+                <a class="" href="../components/button.html">
+                    <li>Button</li>
+                </a>
+                <a class="" href="../components/card.html">
+                    <li>Card</li>
+                </a>
+                <a class="" href="../components/collapse.html">
+                    <li>Collapse</li>
+                </a>
+                <a class="" href="../components/epic.html">
+                    <li>Epic</li>
+                </a>
+                <a class="" href="../components/form.html">
+                    <li>Form</li>
+                </a>
+                <a class="" href="../components/list.html">
+                    <li>List</li>
+                </a>
+                <a class="" href="../components/modal.html">
+                    <li>Modal</li>
+                </a>
+                <a class="" href="../components/nav.html">
+                    <li>Nav</li>
+                </a>
+                <a class="" href="../components/navbar.html">
+                    <li>Navbar</li>
+                </a>
+                <a class=""
+                    href="../components/pagination.html">
+                    <li>Pagination</li>
+                </a>
+                <a class="" href="../components/table.html">
+                    <li>Table</li>
+                </a>
+                <a class="" href="../components/tabs.html">
+                    <li>Tabs</li>
+                </a>
+                <a class="" href="../components/toast.html">
+                    <li>Toasts</li>
+                </a>
+                <a class="" href="../components/tooltip.html">
+                    <li>Tooltip</li>
+                </a>
+            </ul>
+        </li>
+    </ul>
+</aside>
+<section class="content button-page">
+    <div class="container-fullwidth">
+        <div class="row justify-content-center mt-4 mt-desk-5">
+            <div class="col-12 col-tab-9 col-desk-8 mr-desk-2 px-desk-4">
+                <h1 class="mb-2 mt-0">Float</h1>
+                <div class="lead">Toggle between floats at different breakpoints using our float utility classes.</div>
+                <!-- =====================
+    Docs Section - Main HTML
+    ===================== -->
+
+<!-- Usage -->
+<article class="section-scroll" id="usage">
+    <h2 class="b-b-light hash">Usage</h2>
+    <p class="secondary-lead">
+        Our float utility classes help you to float elements to the left, right or none at all. You can use these at
+        different breakpoints helping you to stack items at smaller viewports.
+    </p>
+    <div class="text-cont">
+        <h3>Notation:</h3>
+        <ul class="list-line">
+            <li>You can target the float classes by using <code class="inline">f-{property}</code>.</li>
+            <li>You may also use one of our 5 optional breakpoints, with the the properties being outlined below.</li>
+            <li>Due to mesh being mobile first, these classes affect the breakpoint and upwards, for example - <code
+                    class="inline">f-tab-right</code>
+                will make the element float right on tablet, desktop & HD screens but none at mobile or extra small.
+            </li>
+        </ul>
+    </div>
+    <div class="text-cont">
+        <h3>Properties:</h3>
+        <table class="table-code w-100 t-left">
+            <col width="100">
+            <col width="100">
+            <thead>
+                <tr>
+                    <th>Class</th>
+                    <th>Properties</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>.f-left</td>
+                    <td>float: left;</td>
+                </tr>
+                <tr>
+                    <td>.f-right</td>
+                    <td>float: right;</td>
+                </tr>
+                <tr>
+                    <td>.f-none</td>
+                    <td>float: none;</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</article>
+
+<!-- Clearfix -->
+<article class="section-scroll" id="usage">
+    <h2 class="b-b-light hash">Clearfix</h2>
+    <p class="secondary-lead">
+        Clearfix is a way for an element to clear or 'fix' its elements so no additional markup is needed. Most of the
+        time, it is used in conjunction with floats. For more information, head over to <a
+            href="https://www.geeksforgeeks.org/what-is-a-clearfix/" target="_blank" rel="noopener nofollow">Geeks for
+            Geeks</a>
+    </p>
+    <div class="text-cont">
+        <h3>Notation:</h3>
+        <ul class="list-line">
+            <li>You can target the clearfix class by adding <code class="inline">clearfix</code> to the element you want
+                to be fixed. </li>
+            <li>Generally speaking you would want to add the <code class="inline">clearfix</code> to the parent of the
+                items that are being floated.</li>
+        </ul>
+    </div>
+</article>
+
+<!-- Examples -->
+<article class="section-scroll" id="examples">
+    <h2 class="b-b-light hash">Examples</h2>
+    <h3 class="mt-3">Responsive floats:</h3>
+    <p>
+        Here, the first element is floated to the left, the second to the right on desktop screens, the clearfix class
+        is used on the parent. <span class="d-none d-desk-inline">See the effect it has with it turned off by using the
+            button.</span>
+        <button class="btn btn-rounded btn-secondary d-none d-desk-block mt-3" id="clearfixBtn">Turn clearfix
+            off</button>
+        <div class="column-demo c-white mb-3">
+            <div class="br t-center clearfix" id="clearfixDemo">
+                <div class="text br mb-2 f-desk-left w-40"></div>
+                <div class="text br f-desk-right w-40"></div>
+            </div>
+        </div>
+        <pre
+            class="highlight"><code class="html">&lt;div class="clearfix"&gt;
+&lt;div class="f-desk-left w-40"&gt;&lt;/div&gt;
+&lt;div class="f-desk-right w-40"&gt;&lt;/div&gt;
+&lt;/div&gt;</code><img class="copy-to-clipboard"src="../../assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="../../assets/icons/checked.svg" alt="Success icon"></pre>
+</article>
+
+<!-- Variations -->
+<article class="section-scroll" id="variations">
+    <h2 class="b-b-light hash">Variations</h2>
+    <pre
+        class="highlight mt-3"><code class="html">&lt;!-- Default --&gt;
+&lt;div class="f-left"&gt;&lt;/div&gt;
+&lt;div class="f-right"&gt;&lt;/div&gt;
+&lt;div class="f-none"&gt;&lt;/div&gt;
+&lt;!-- Mobile --&gt;
+&lt;div class="f-mob-left"&gt;&lt;/div&gt;
+&lt;div class="f-mob-right"&gt;&lt;/div&gt;
+&lt;div class="f-mob-none"&gt;&lt;/div&gt;
+&lt;!-- Tablet --&gt;
+&lt;div class="f-tab-left"&gt;&lt;/div&gt;
+&lt;div class="f-tab-right"&gt;&lt;/div&gt;
+&lt;div class="f-tab-none"&gt;&lt;/div&gt;
+&lt;!-- Desktop --&gt;
+&lt;div class="f-desk-left"&gt;&lt;/div&gt;
+&lt;div class="f-desk-right"&gt;&lt;/div&gt;
+&lt;div class="f-desk-none"&gt;&lt;/div&gt;
+&lt;!-- HD --&gt;
+&lt;div class="f-hd-left"&gt;&lt;/div&gt;
+&lt;div class="f-hd-right"&gt;&lt;/div&gt;
+&lt;div class="f-hd-none"&gt;&lt;/div&gt;</code><img class="copy-to-clipboard"src="../../assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="../../assets/icons/checked.svg" alt="Success icon"></pre>
+</article>
+
+            </div><!-- /Col -->
+            <!-- =====================
+    Contents Nav
+    ===================== -->
+<div class="col-2 pr-0">
+    <aside class="smallnav h-100 d-none d-tab-block">
+        <div class="smallnav-cont p-sticky">
+            <ul class="table-of-contents b-b-light">
+                                <a href="#usage">
+                    <li class="contents-item" data-contentitem="usage">Usage</li>
+                </a>
+                                <a href="#clearfix">
+                    <li class="contents-item" data-contentitem="clearfix">Clearfix</li>
+                </a>
+                                <a href="#example">
+                    <li class="contents-item" data-contentitem="example">Example</li>
+                </a>
+                                <a href="#variations">
+                    <li class="contents-item" data-contentitem="variations">Variations</li>
+                </a>
+                            </ul>
+            <ul class="community">
+                <li class="d-flex align-items-center">
+                    <img class="icon" src="../../assets/icons/edit.svg" alt="Edit icon">
+                    <a href="https://github.com/ainsleyclark/mesh/tree/master/documentation/documentation/float.md"
+                        target="_blank" class="hover ml-1">Edit this page</a>
+                </li>
+                <li class="d-flex align-items-center">
+                    <img class="icon" src="../../assets/icons/danger.svg" alt="Warning icon">
+                    <a href="https://github.com/ainsleyclark/mesh/issues" class="hover ml-1">Report a problem</a>
+                </li>
+                <li class="d-flex align-items-center">
+                    <img class="icon" src="../../assets/icons/chat-grey.svg" alt="Community icon">
+                    <a href="https://discord.gg/geBW7CN" target="_blank" class="hover ml-1">Ask the community</a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+</div><!-- /Col -->            <!-- =====================
+    Footer
+    ===================== -->
+<div class="col-12 footer-col">
+    <footer class="primary">
+        <div class="d-flex align-items-center justify-content-center flex-wrap h-100">
+            <span class="mb-1 my-desk-0 mx-3">Version 1.0.0</span>
+            <div class="icon-cont mb-1 my-desk-0 mx-3 d-inline-flex align-items-center">
+                <img class="footer-icon" src="../../assets/icons/chat.svg" alt="Github logo">
+                <a class="hover" href="https://discordapp.com/channels/569873903237857300/569873903237857304" target="_blank">Community</a>
+            </div>
+            <span class="mx-3 t-center">© 2014-2019 mesh, All rights reserved.</span>
+        </div>
+    </footer>
+</div><!-- /Col -->
+        </div><!-- /Row -->
+    </div><!-- /Container -->
+</section>
+
+        </main>
+        <script src="../../js/vendor/highlight/highlight.pack.js"></script>
+        <script src="../../js/app.js"></script>
+        <!-- =====================
+    Page JS (Place in <script></script> tags)
+    ===================== -->
+
+    </body>
+
+<!-- Mirrored from 127.0.0.1:8000/documentation/utility/float by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Jul 2023 10:45:36 GMT -->
+</html>

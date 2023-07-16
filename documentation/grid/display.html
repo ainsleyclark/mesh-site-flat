@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from 127.0.0.1:8000/documentation/grid/display by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Jul 2023 10:45:36 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Display | meshCSS</title>
+    <meta name="description" content="Easily toggle the display of items at each breakpoint by using our straightforward display classes. ">
+    <link rel="canonical" href="https://www.meshcss.com/" />
+    <meta name="csrf" content="b51fKECi9twQ3j8eTInkU6xBzvJM4klQSX1wSLqw" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Open Graph -->
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Display">
+    <meta property="og:description" content="Easily toggle the display of items at each breakpoint by using our straightforward display classes. ">
+    <meta property="og:url" content="https://www.meshcss.com/">
+    <meta property="og:site_name" content="mesh>">
+    <meta property="og:image" content="https://www.meshcss.com/">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:description" content="Easily toggle the display of items at each breakpoint by using our straightforward display classes. ">
+    <meta name="twitter:title" content="Display">
+    <meta name="twitter:image" content="https://www.meshcss.com/">
+    <!-- CSS -->
+    
+    <!-- //! Consider using one style sheet here for font awesome -->
+    
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;display=swap" onload="this.rel='stylesheet'" as="style">
+    <link rel="preload" href="../../css/vendor/fontawesome/css/all.min.css" onload="this.rel='stylesheet'" as="style">
+
+    <link rel="prefetch" href="../../css/mesh.css" onload="this.rel='stylesheet'" as="style">
+    
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;display=swap"></noscript>
+    <link rel="stylesheet" type="text/css" href="../../css/app.css"> 
+    <noscript><link rel="stylesheet" href="../../css/vendor/fontawesome/css/all.min.css"></noscript>
+    <noscript><link rel="stylesheet" href="../../css/mesh.css"></noscript>
+    <noscript><link rel="stylesheet" href="../../css/app.css"></noscript>
+    <!-- =====================
+    Page CSS (Place in <style></style> tags)
+    ===================== -->
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../assets/favicon/site.html">
+    <link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ff2451">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140877948-1"></script>
+    <script>
+    //! UNCOMMENT FOR GTAG
+    // window.dataLayer = window.dataLayer || [];
+    // function gtag(){dataLayer.push(arguments);}
+    // gtag('js', new Date());
+    // gtag('config', 'UA-140877948-1');
+    </script>
+</head>
+    <body>
+        <!--[if lte IE 9]>
+            <div class="outdated-browser">
+                <h2>You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</h2>
+            </div>
+        <![endif]-->
+        <!-- =====================
+    Header
+    ===================== -->
+
+<header class="primary d-flex align-items-center ">
+    <div class="container-fullwidth px-tab-4">
+        <div class="row">
+            <div class="col-6">
+                <a class="d-flex align-items-center logo-cont" href="../../index.html">
+                    <div class="logo-cont d-flex align-items-center">
+                        <img class="logo" src="../../assets/svg/meshlogo.svg" alt="mesh Logo">
+                    </div>
+                    <div class="text-cont d-none d-tab-block">
+                        <h3>meshCSS</h3>
+                    </div>
+                </a>
+            </div>
+            <!-- //! d none here for mobile -->
+            <div class="col-6 align-items-center justify-content-end d-none d-tab-flex">        
+                <nav class="primary">
+                    <ul class="d-flex align-items-center my-0 t-uppercase">
+                        <a class="hover" href="../getting-started/introduction.html"><li class="mx-3">Documentation</li></a>
+                        <a class="hover" href="https://github.com/ainsleyclark/mesh" target="_blank"><li class="mx-3">Github</li></a>
+                        <a class="ml-3" href="../thanks.html">
+                            <button class="btn btn-rounded btn-outline btn-primary btn-icon download">Download
+                            <svg class="ml-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 471.2 471.2" style="enable-background:new 0 0 471.2 471.2;" xml:space="preserve">
+                                <g>
+                                    <path d="M457.7,230.15c-7.5,0-13.5,6-13.5,13.5v122.8c0,33.4-27.2,60.5-60.5,60.5H87.5c-33.4,0-60.5-27.2-60.5-60.5v-124.8    c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5v124.8c0,48.3,39.3,87.5,87.5,87.5h296.2c48.3,0,87.5-39.3,87.5-87.5v-122.8    C471.2,236.25,465.2,230.15,457.7,230.15z" data-original="#000000" class="active-path" data-old_color="#ffffff" fill="#ffffff"/>
+                                    <path d="M226.1,346.75c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4l85.8-85.8c5.3-5.3,5.3-13.8,0-19.1c-5.3-5.3-13.8-5.3-19.1,0l-62.7,62.8    V30.75c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5v273.9l-62.8-62.8c-5.3-5.3-13.8-5.3-19.1,0c-5.3,5.3-5.3,13.8,0,19.1    L226.1,346.75z" data-original="#000000" class="active-path" data-old_color="#ffffff" fill="#ffffff"/>
+                                </g>
+                            </svg>
+                            </button>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div> 
+</header>        <main class="page-display">
+            <div class="header-spacer"></div>
+<!-- =====================
+    Side Navigation
+    ===================== -->
+<aside class="sidenav">
+    <h3>Documentation</h3>
+    <ul class="main-list color-black">
+        <!-- Getting Started -->
+        <li class="my-4">
+            <div class="nav-header b-b-light pb-2">Getting Started</div>
+            <ul class="sub-list mt-1">
+                <a class=""
+                    href="../getting-started/introduction.html">
+                    <li>Introduction</li>
+                </a>
+                <a class=""
+                    href="../getting-started/installation.html">
+                    <li>Installation</li>
+                </a>
+                <a class="" href="../../builder.html">
+                    <li>meshBuilder</li>
+                </a>
+                <a class=""
+                    href="../getting-started/javascript.html">
+                    <li>Javascript</li>
+                </a>
+                <a class=""
+                    href="../getting-started/notation.html">
+                    <li>Notation</li>
+                </a>
+            </ul>
+        </li>
+        <!-- Grid -->
+        <li class="my-4">
+            <div class="nav-header b-b-light pb-2">Grid</div>
+            <ul class="sub-list mt-1">
+                <a class="" href="grid.html">
+                    <li>Grid</li>
+                </a>
+                <a class="" href="flex.html">
+                    <li>Flex</li>
+                </a>
+                <a class="" href="order.html">
+                    <li>Order</li>
+                </a>
+                <a class="active" href="display.html">
+                    <li>Display</li>
+                </a>
+            </ul>
+        </li>
+        <!-- Utility -->
+        <li class="my-4">
+            <div class="nav-header b-b-light pb-2">Utility</div>
+            <ul class="sub-list mt-1">
+                <a class="" href="../utility/borders.html">
+                    <li>Borders</li>
+                </a>
+                <a class="" href="../utility/colors.html">
+                    <li>Colors</li>
+                </a>
+                <a class="" href="../utility/float.html">
+                    <li>Float</li>
+                </a>
+                <a class="" href="../utility/media.html">
+                    <li>Media</li>
+                </a>
+                <a class="" href="../utility/position.html">
+                    <li>Position</li>
+                </a>
+                <a class="" href="../utility/sizing.html">
+                    <li>Sizing</li>
+                </a>
+                <a class="" href="../utility/spacers.html">
+                    <li>Spacers</li>
+                </a>
+                <a class="" href="../utility/spacing.html">
+                    <li>Spacing</li>
+                </a>
+                <a class="" href="../utility/text.html">
+                    <li>Text</li>
+                </a>
+                <a class="" href="../utility/visibility.html">
+                    <li>Visibility</li>
+                </a>
+            </ul>
+        </li>
+        <!-- Components -->
+        <li class="my-4">
+            <div class="nav-header b-b-light pb-2">Components</div>
+            <ul class="sub-list mt-1">
+                <a class="" href="../components/alert.html">
+                    <li>Alert</li>
+                </a>
+                <a class="" href="../components/badges.html">
+                    <li>Badges</li>
+                </a>
+                <a class=""
+                    href="../components/breadcrumb.html">
+                    <li>Breadcrumbs</li>
+                </a>
+                <a class="" href="../components/button.html">
+                    <li>Button</li>
+                </a>
+                <a class="" href="../components/card.html">
+                    <li>Card</li>
+                </a>
+                <a class="" href="../components/collapse.html">
+                    <li>Collapse</li>
+                </a>
+                <a class="" href="../components/epic.html">
+                    <li>Epic</li>
+                </a>
+                <a class="" href="../components/form.html">
+                    <li>Form</li>
+                </a>
+                <a class="" href="../components/list.html">
+                    <li>List</li>
+                </a>
+                <a class="" href="../components/modal.html">
+                    <li>Modal</li>
+                </a>
+                <a class="" href="../components/nav.html">
+                    <li>Nav</li>
+                </a>
+                <a class="" href="../components/navbar.html">
+                    <li>Navbar</li>
+                </a>
+                <a class=""
+                    href="../components/pagination.html">
+                    <li>Pagination</li>
+                </a>
+                <a class="" href="../components/table.html">
+                    <li>Table</li>
+                </a>
+                <a class="" href="../components/tabs.html">
+                    <li>Tabs</li>
+                </a>
+                <a class="" href="../components/toast.html">
+                    <li>Toasts</li>
+                </a>
+                <a class="" href="../components/tooltip.html">
+                    <li>Tooltip</li>
+                </a>
+            </ul>
+        </li>
+    </ul>
+</aside>
+<section class="content button-page">
+    <div class="container-fullwidth">
+        <div class="row justify-content-center mt-4 mt-desk-5">
+            <div class="col-12 col-tab-9 col-desk-8 mr-desk-2 px-desk-4">
+                <h1 class="mb-2 mt-0">Display</h1>
+                <div class="lead">Easily toggle the display of items at each breakpoint by using our straightforward display classes. </div>
+                <!-- =====================
+    Docs Section - Main HTML
+    ===================== -->
+
+<!-- Usage -->
+<article class="section-scroll" id="usage">
+    <h2 class="b-b-light hash">Usage</h2>
+    <p class="secondary-lead">
+        The display property classes allows you to switch the css display property at each breakpoint, allowing you to
+        hide and show elements in the DOM responsively.
+    </p>
+    <div class="text-cont">
+        <h3>Notation:</h3>
+        <ul class="list-line">
+            <li>You can target the display class by using <code class="inline">d-{breakpoint}-{property}</code>. The
+                breakpoint being optional and one of our five breakpoints and the properties are outlined below.</li>
+            <li>These classes affect the breakpoint and upwards, for example - <code class="inline">d-tab-flex</code>
+                will make the element's display 'flex' on tablet, desktop & HD screens.</li>
+        </ul>
+    </div>
+    <div class="text-cont">
+        <h3>Properties:</h3>
+        <table class="table-code w-100 t-left">
+            <col width="100">
+            <col width="100">
+            <thead>
+                <tr>
+                    <th>Class</th>
+                    <th>Properties</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>.d-none</td>
+                    <td>display: none;</td>
+                </tr>
+                <tr>
+                    <td>.d-inline</td>
+                    <td>display: inline;</td>
+                </tr>
+                <tr>
+                    <td>.d-inline-block</td>
+                    <td>display: inline-block;</td>
+                </tr>
+                <tr>
+                    <td>.d-flex</td>
+                    <td>display: flex;</td>
+                </tr>
+                <tr>
+                    <td>.d-inline-flex</td>
+                    <td>display: inline-flex;</td>
+                </tr>
+                <tr>
+                    <td>.d-table</td>
+                    <td>display: table;</td>
+                </tr>
+                <tr>
+                    <td>.d-table-row</td>
+                    <td>display: table-row;</td>
+                </tr>
+                <tr>
+                    <td>.d-table-cell</td>
+                    <td>display: table-cell;</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</article>
+
+<!-- Hiding -->
+<article class="section-scroll" id="hiding">
+    <h2 class="b-b-light hash">Hiding/showing</h2>
+    <p class="secondary-lead">
+        Its common to hide elements in the DOM on mobile to create a faster user experience for mobiles and tablets. You
+        can hide elements at various sizes with the display class using <code class="inline">.d-none</code>.
+        <br>Use the table below to help you with hiding and showing elements at various screen sizes.
+        <strong>{type}</strong> can be any of the properties listed above.
+    </p>
+    <div class="text-cont">
+        <table class="table-code w-100 t-left">
+            <col width="100">
+            <col width="100">
+            <thead>
+                <tr>
+                    <th>Breakpoint</th>
+                    <th>Class</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Hidden on all</td>
+                    <td>.d-none</td>
+                </tr>
+                <tr>
+                    <td>Hidden on extra small only</td>
+                    <td>.d-mob-none .d-tab-{type}</td>
+                </tr>
+                <tr>
+                    <td>Hidden on tablet only</td>
+                    <td>.d-tab-none .d-desk-{type}</td>
+                </tr>
+                <tr>
+                    <td>Hidden on desktop only</td>
+                    <td>.d-desk-none .d-hd-{type}</td>
+                </tr>
+                <tr>
+                    <td>Hidden on HD screens only</td>
+                    <td>.d-hd-none</td>
+                </tr>
+                <tr>
+                    <td>Visible on all</td>
+                    <td>.d-{type}</td>
+                </tr>
+                <tr>
+                    <td>Visible on extra small only</td>
+                    <td>.d-none .d-mob-{type} .d-tab-none</td>
+                </tr>
+                <tr>
+                    <td>Visible on tablet only</td>
+                    <td>.d-none .d-tab-{type} .d-desk-none</td>
+                </tr>
+                <tr>
+                    <td>Visible on desktop only</td>
+                    <td>.d-none .d-desk-{type} .d-hd-none</td>
+                </tr>
+                <tr>
+                    <td>Visible on HD screens only</td>
+                    <td>.d-none .d-hd-{type}</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</article>
+
+<!-- Examples -->
+<article class="section-scroll" id="examples">
+    <h2 class="b-b-light hash">Examples</h2>
+    <h3 class="mt-3">Hiding elements:</h3>
+    <p>
+        Using our table above, we can apply the theory to something practical. Here the third element will only be
+        visible on desktop screens.
+    </p>
+    <div class="column-demo c-white mb-3">
+        <div class="br d-flex mb-3 justify-content-center justify-content-desk-between t-center">
+            <div class="text px-3 mr-2 br mx-0 w-30">
+                element
+            </div>
+            <div class="text px-3 mx-2 br mx-0 w-30">
+                element
+            </div>
+            <div class="text px-3 mx-2 br mx-0 w-30 d-none d-desk-block">
+                d-none d-desk-block
+            </div>
+        </div>
+    </div>
+    <pre
+        class="highlight"><code class="html">&lt;div class="element"&gt;element&lt;/div&gt;
+&lt;div class="element"&gt;element&lt;/div&gt;
+&lt;div class="d-none d-desk-block"&gt;third-child&lt;/div&gt;
+</code><img class="copy-to-clipboard"src="../../assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="../../assets/icons/checked.svg" alt="Success icon"></pre>
+    <h3 class="mt-3">Changing properties:</h3>
+    <p>
+        A common practice is to make containers/parents have a <code class="inline">display: flex;</code> attached to
+        them on larger screens. Below, we are doing exactly that. The items are set to block from mobile up until
+        tablet,
+        when they become flex items, aligning horizontally.
+    </p>
+    <div class="column-demo mb-3">
+        <div class="br mb-3 c-white">
+            <div class="d-block d-desk-flex justify-content-between mb-3 t-center">
+                <div class="text my-2 my-desk-0 mr-desk-1 mr-hd-2 px-3 px-tab-4 px-hd-5 br">1</div>
+                <div class="text my-2 my-desk-0 mx-desk-1 mx-hd-2 px-3 px-tab-4 px-hd-5 br">2</div>
+                <div class="text my-2 my-desk-0 mx-desk-1 mx-hd-2 px-3 px-tab-4 px-hd-5 br">3</div>
+                <div class="text my-2 my-desk-0 mx-desk-1 mx-hd-2 px-3 px-tab-4 px-hd-5 br">4</div>
+                <div class="text my-2 my-desk-0 ml-desk-1 ml-hd-2 px-3 px-tab-4 px-hd-5 br">5</div>
+            </div>
+        </div>
+    </div>
+    <pre
+        class="highlight"><code class="html">&lt;div class="d-block d-desk-flex justify-content-between"&gt;
+    &lt;div class="flex-item"&gt;1&lt;/div&gt;
+    &lt;div class="flex-item"&gt;2&lt;/div&gt;
+    &lt;div class="flex-item"&gt;3&lt;/div&gt;
+    &lt;div class="flex-item"&gt;4&lt;/div&gt;
+    &lt;div class="flex-item"&gt;5&lt;/div&gt;
+&lt;/div&gt;</code><img class="copy-to-clipboard"src="../../assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="../../assets/icons/checked.svg" alt="Success icon"></pre>
+</article>
+
+<!-- Variations -->
+<article class="section-scroll" id="variations">
+    <h2 class="b-b-light hash">Variations</h2>
+    <pre
+        class="highlight mt-3"><code class="html">&lt;!-- Default --&gt;
+&lt;div class="d-none"&gt;&lt;/div&gt;
+&lt;div class="d-inline"&gt;&lt;/div&gt;
+&lt;div class="d-inline-block"&gt;&lt;/div&gt;
+&lt;div class="d-block"&gt;&lt;/div&gt;
+&lt;div class="d-flex"&gt;&lt;/div&gt;
+&lt;div class="d-inline-flex"&gt;&lt;/div&gt;
+&lt;div class="d-table"&gt;&lt;/div&gt;
+&lt;div class="d-table-row"&gt;&lt;/div&gt;
+&lt;div class="d-table-cell"&gt;&lt;/div&gt;
+&lt;!-- Mobile --&gt;
+&lt;div class="d-mob-none"&gt;&lt;/div&gt;
+&lt;div class="d-mob-inline"&gt;&lt;/div&gt;
+&lt;div class="d-mob-inline-block"&gt;&lt;/div&gt;
+&lt;div class="d-mob-block"&gt;&lt;/div&gt;
+&lt;div class="d-mob-flex"&gt;&lt;/div&gt;
+&lt;div class="d-mob-inline-flex"&gt;&lt;/div&gt;
+&lt;div class="d-mob-table"&gt;&lt;/div&gt;
+&lt;div class="d-mob-table-row"&gt;&lt;/div&gt;
+&lt;div class="d-mob-table-cell"&gt;&lt;/div&gt;
+&lt;!-- Tablet --&gt;
+&lt;div class="d-tab-none"&gt;&lt;/div&gt;
+&lt;div class="d-tab-inline"&gt;&lt;/div&gt;
+&lt;div class="d-tab-inline-block"&gt;&lt;/div&gt;
+&lt;div class="d-tab-block"&gt;&lt;/div&gt;
+&lt;div class="d-tab-flex"&gt;&lt;/div&gt;
+&lt;div class="d-tab-inline-flex"&gt;&lt;/div&gt;
+&lt;div class="d-tab-table"&gt;&lt;/div&gt;
+&lt;div class="d-tab-table-row"&gt;&lt;/div&gt;
+&lt;div class="d-tab-table-cell"&gt;&lt;/div&gt;
+&lt;!-- Desktop --&gt;
+&lt;div class="d-desk-none"&gt;&lt;/div&gt;
+&lt;div class="d-desk-inline"&gt;&lt;/div&gt;
+&lt;div class="d-desk-inline-block"&gt;&lt;/div&gt;
+&lt;div class="d-desk-block"&gt;&lt;/div&gt;
+&lt;div class="d-desk-flex"&gt;&lt;/div&gt;
+&lt;div class="d-desk-inline-flex"&gt;&lt;/div&gt;
+&lt;div class="d-desk-table"&gt;&lt;/div&gt;
+&lt;div class="d-desk-table-row"&gt;&lt;/div&gt;
+&lt;div class="d-desk-table-cell"&gt;&lt;/div&gt;
+&lt;!-- HD --&gt;
+&lt;div class="d-hd-none"&gt;&lt;/div&gt;
+&lt;div class="d-hd-inline"&gt;&lt;/div&gt;
+&lt;div class="d-hd-inline-block"&gt;&lt;/div&gt;
+&lt;div class="d-hd-block"&gt;&lt;/div&gt;
+&lt;div class="d-hd-flex"&gt;&lt;/div&gt;
+&lt;div class="d-hd-inline-flex"&gt;&lt;/div&gt;
+&lt;div class="d-hd-table"&gt;&lt;/div&gt;
+&lt;div class="d-hd-table-row"&gt;&lt;/div&gt;
+&lt;div class="d-hd-table-cell"&gt;&lt;/div&gt;</code><img class="copy-to-clipboard"src="../../assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="../../assets/icons/checked.svg" alt="Success icon"></pre>
+</article>
+
+<!-- Variables -->
+<article class="section-scroll" id="variables">
+    <h2 class="b-b-light hash">Variables</h2>
+    <p class="secondary-lead">
+        With the <code class="inline">display-properties</code> map you can include only the displays you need.
+    </p>
+    <div class="table-scroll">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="w-40">Variable</th>
+                    <th class="w-20">Value</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <pre class="variables highlight"><code class="scss">$display-properties: (
+    none, 
+    inline, 
+    inline-block, 
+    block, 
+    flex, 
+    inline-flex, 
+    table, 
+    table-row, 
+    table-cell
+) !default;</code></pre>
+                    </td>
+                    <td>Map(string)</td>
+                    <td>Enter or delete a CSS display property in the map. The display utility will loop over this map
+                        and use the proeprty as a class name. <strong>Note:</strong> Do not use an invalid CSS display
+                        property, an error will occur.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</article>
+
+            </div><!-- /Col -->
+            <!-- =====================
+    Contents Nav
+    ===================== -->
+<div class="col-2 pr-0">
+    <aside class="smallnav h-100 d-none d-tab-block">
+        <div class="smallnav-cont p-sticky">
+            <ul class="table-of-contents b-b-light">
+                                <a href="#usage">
+                    <li class="contents-item" data-contentitem="usage">Usage</li>
+                </a>
+                                <a href="#hiding">
+                    <li class="contents-item" data-contentitem="hiding">Hiding/showing</li>
+                </a>
+                                <a href="#examples">
+                    <li class="contents-item" data-contentitem="examples">Examples</li>
+                </a>
+                                <a href="#variations">
+                    <li class="contents-item" data-contentitem="variations">Variations</li>
+                </a>
+                                <a href="#variables">
+                    <li class="contents-item" data-contentitem="variables">Variables</li>
+                </a>
+                            </ul>
+            <ul class="community">
+                <li class="d-flex align-items-center">
+                    <img class="icon" src="../../assets/icons/edit.svg" alt="Edit icon">
+                    <a href="https://github.com/ainsleyclark/mesh/tree/master/documentation/documentation/display.md"
+                        target="_blank" class="hover ml-1">Edit this page</a>
+                </li>
+                <li class="d-flex align-items-center">
+                    <img class="icon" src="../../assets/icons/danger.svg" alt="Warning icon">
+                    <a href="https://github.com/ainsleyclark/mesh/issues" class="hover ml-1">Report a problem</a>
+                </li>
+                <li class="d-flex align-items-center">
+                    <img class="icon" src="../../assets/icons/chat-grey.svg" alt="Community icon">
+                    <a href="https://discord.gg/geBW7CN" target="_blank" class="hover ml-1">Ask the community</a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+</div><!-- /Col -->            <!-- =====================
+    Footer
+    ===================== -->
+<div class="col-12 footer-col">
+    <footer class="primary">
+        <div class="d-flex align-items-center justify-content-center flex-wrap h-100">
+            <span class="mb-1 my-desk-0 mx-3">Version 1.0.0</span>
+            <div class="icon-cont mb-1 my-desk-0 mx-3 d-inline-flex align-items-center">
+                <img class="footer-icon" src="../../assets/icons/chat.svg" alt="Github logo">
+                <a class="hover" href="https://discordapp.com/channels/569873903237857300/569873903237857304" target="_blank">Community</a>
+            </div>
+            <span class="mx-3 t-center">© 2014-2019 mesh, All rights reserved.</span>
+        </div>
+    </footer>
+</div><!-- /Col -->
+        </div><!-- /Row -->
+    </div><!-- /Container -->
+</section>
+
+        </main>
+        <script src="../../js/vendor/highlight/highlight.pack.js"></script>
+        <script src="../../js/app.js"></script>
+        <!-- =====================
+    Page JS (Place in <script></script> tags)
+    ===================== -->
+
+    </body>
+
+<!-- Mirrored from 127.0.0.1:8000/documentation/grid/display by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Jul 2023 10:45:36 GMT -->
+</html>
